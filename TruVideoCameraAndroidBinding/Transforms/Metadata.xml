@@ -1,0 +1,23 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.truvideo.camera']" name="managedName">TruVideoCameraAndroid</attr>
+  <attr path="/api/package[@name='com.truvideo.camera']/class[@name='DotnetCameraTruvideo']/method[@name='getCameraInformation']"
+        name="visibility">public</attr>
+  <enum field="BACK" name="Back" type="TruvideoSdkCameraLensFacing"/>
+  <enum field="FRONT" name="Front" type="TruvideoSdkCameraLensFacing"/>
+  <enum field="OFF" name="Off" type="TruvideoSdkCameraFlashMode"/>
+  <enum field="ON" name="On" type="TruvideoSdkCameraFlashMode"/>
+  <enum field="PORTRAIT" name="Portrait" type="TruvideoSdkCameraOrientation"/>
+  <enum field="LANDSCAPE_LEFT" name="LandscapeLeft" type="TruvideoSdkCameraOrientation"/>
+  <enum field="LANDSCAPE_RIGHT" name="LandscapeRight" type="TruvideoSdkCameraOrientation"/>
+  <enum field="PORTRAIT_REVERSE" name="PortraitReverse" type="TruvideoSdkCameraOrientation"/>
+  <method enumReturn="true" name="Picture" />
+  <method enumReturn="true" name="Video" />
+  <method enumReturn="true" name="VideoAndPicture" />
+</metadata>

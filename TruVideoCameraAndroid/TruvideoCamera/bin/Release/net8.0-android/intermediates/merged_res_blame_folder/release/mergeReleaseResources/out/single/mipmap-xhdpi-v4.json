@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/mipmap-xhdpi-v4/ic_launcher_round.webp",
+        "source": "com.truvideo.camera.TruvideoCamera-main-75:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/mipmap-xhdpi-v4/ic_launcher.webp",
+        "source": "com.truvideo.camera.TruvideoCamera-main-75:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]

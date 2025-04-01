@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/layout-sw600dp-v13/mtrl_layout_snackbar.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-51:/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-51:/layout-sw600dp-v13/design_layout_snackbar.xml"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_transparent_colored_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_transparent_colored_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/external_plain_video_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-ux-1.23.0-63:/raw/external_plain_video_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_face_mesh_occluder_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-ux-1.23.0-63:/raw/sceneform_face_mesh_occluder_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_footprint.glb",
+        "source": "com.truvideo.camera.TruvideoCamera-ux-1.23.0-63:/raw/sceneform_footprint.glb"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_transparent_textured_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_transparent_textured_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/ar_environment_material_flat.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/ar_environment_material_flat.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/external_chroma_key_video_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-ux-1.23.0-63:/raw/external_chroma_key_video_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_camera_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_camera_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_opaque_textured_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_opaque_textured_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/keep_arcore.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.31.0-44:/raw/keep_arcore.xml"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_plane_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_plane_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_face_mesh_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-ux-1.23.0-63:/raw/sceneform_face_mesh_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_view_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_view_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_opaque_colored_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_opaque_colored_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_plane_shadow_material.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_plane_shadow_material.filamat"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/sceneform_default_light_probe.sfb",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/sceneform_default_light_probe.sfb"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/raw/ar_environment_material_depth.filamat",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.23.0-55:/raw/ar_environment_material_depth.filamat"
+    }
+]

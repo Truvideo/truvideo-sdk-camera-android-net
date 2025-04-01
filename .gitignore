@@ -1,0 +1,9 @@
+
+TruVideoCameraAndroidBinding/bin
+TruVideoCameraAndroidBinding/obj
+#TruVideoCameraAndroid/TruvideoCore/bin
+#TruVideoCameraAndroid/TruvideoCore/.gradle/
+#TruVideoCameraAndroid/TruvideoCore/build/
+#TruVideoCameraAndroid/TruvideoCore/.idea/
+#TruVideoCameraAndroid/TruvideoCore/.iml
+#TruVideoCameraAndroid/TruvideoCore/local.properties

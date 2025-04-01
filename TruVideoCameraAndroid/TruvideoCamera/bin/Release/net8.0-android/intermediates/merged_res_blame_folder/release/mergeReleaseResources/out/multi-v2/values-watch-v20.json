@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-72:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/77f29cca953edca399767b33f908d4ed/transformed/appcompat-1.7.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-74:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/77f29cca953edca399767b33f908d4ed/transformed/appcompat-1.7.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
