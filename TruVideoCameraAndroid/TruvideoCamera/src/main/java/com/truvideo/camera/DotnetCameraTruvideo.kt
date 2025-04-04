@@ -10,8 +10,13 @@ import kotlinx.coroutines.launch
 
 
 class DotnetCameraTruvideo {
+    fun setDataListener(listener: CameraEventListener) {
+        DotnetCameraTruvideo.listener = listener
+    }
+
     companion object {
         var mainCallback: CameraCallback? = null
+        var listener: CameraEventListener? = null
 
         @JvmStatic
         fun showCameraIn(
@@ -26,6 +31,7 @@ class DotnetCameraTruvideo {
                 AppInitializer.getInstance(context.applicationContext)
                     .initializeComponent(TruvideoSdkCameraInitializer::class.java)
                 mainCallback = callback
+
                 val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }

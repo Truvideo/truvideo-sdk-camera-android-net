@@ -20,4 +20,6 @@
   <method enumReturn="true" name="Picture" />
   <method enumReturn="true" name="Video" />
   <method enumReturn="true" name="VideoAndPicture" />
+  <add-node path="/api/package[@name='com.truvideo.camera']/class[@name='DotnetCameraTruvideo']/method[@name='setDataListener']" name="visibility">public</add-node>
+
 </metadata>
