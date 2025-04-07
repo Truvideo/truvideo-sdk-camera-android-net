@@ -8,12 +8,15 @@ import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
 import com.truvideo.sdk.camera.TruvideoSdkCamera
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraConfiguration
+import com.truvideo.sdk.camera.model.TruvideoSdkCameraEvent
+import com.truvideo.sdk.camera.model.TruvideoSdkCameraEventType
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraFlashMode
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraLensFacing
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraMedia
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraMode
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraOrientation
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraResolution
+import com.truvideo.sdk.camera.model.events.TruvideoSdkCameraEventRecordingStarted
 import com.truvideo.sdk.camera.ui.activities.camera.TruvideoSdkCameraContract
 import kotlinx.coroutines.launch
 
@@ -34,6 +37,7 @@ class CameraActivity : ComponentActivity() {
 
                 }
             getCameraInformation(this@CameraActivity)
+            getEvents(this@CameraActivity)
         }
     }
 
@@ -55,7 +59,6 @@ class CameraActivity : ComponentActivity() {
         } else {
             TruvideoSdkCameraFlashMode.OFF
         }
-
         val orientation: TruvideoSdkCameraOrientation? =
             if (orientationString.equals("PORTRAIT", true)) {
                 TruvideoSdkCameraOrientation.PORTRAIT
@@ -68,8 +71,6 @@ class CameraActivity : ComponentActivity() {
             } else {
                 null
             }
-
-
         // You can choose where the files will be saved
         val outputPath = context.filesDir.path + "/camera"
 
@@ -87,7 +88,6 @@ class CameraActivity : ComponentActivity() {
             if (resolutions.isNotEmpty()) {
                 frontResolution = resolutions[0]
             }
-
         }
 
         val backResolutions: List<TruvideoSdkCameraResolution> = ArrayList()
@@ -116,6 +116,13 @@ class CameraActivity : ComponentActivity() {
             mode = mode
         )
         cameraScreenLauncher?.launch(configuration)
+
+    }
+
+    fun getEvents(context: ComponentActivity) {
+        TruvideoSdkCamera.events.observeForever { event: TruvideoSdkCameraEvent ->
+            DotnetCameraTruvideo.listener?.onDataReceived("${event}")
+        }
 
     }
 }
