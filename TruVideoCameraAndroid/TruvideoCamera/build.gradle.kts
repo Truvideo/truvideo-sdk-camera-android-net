@@ -44,7 +44,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.truvideo.sdk.android.camera)
     configurations["copyDependencies"].dependencies.add(
-        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:76.2.5")
+        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:76.3.9")
     )
     implementation("com.google.code.gson:gson:2.10.1")
 

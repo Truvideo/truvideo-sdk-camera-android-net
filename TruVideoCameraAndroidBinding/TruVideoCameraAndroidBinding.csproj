@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <TargetFramework>net8.0-android</TargetFramework>
         <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
@@ -169,6 +169,19 @@
 
     <ItemGroup Condition="$(TargetFramework.Contains('android'))">
         <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\ktx-1.0.0-beta01.aar">
+            <Bind>false</Bind>
+            <Visible>false</Visible>
+        </AndroidLibrary>
+    </ItemGroup>
+    <ItemGroup Condition="$(TargetFramework.Contains('android'))">
+        <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\core-1.47.0.aar">
+            <Bind>false</Bind>
+            <Visible>false</Visible>
+        </AndroidLibrary>
+    </ItemGroup>
+
+    <ItemGroup Condition="$(TargetFramework.Contains('android'))">
+        <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\sceneform-1.23.0.aar">
             <Bind>false</Bind>
             <Visible>false</Visible>
         </AndroidLibrary>

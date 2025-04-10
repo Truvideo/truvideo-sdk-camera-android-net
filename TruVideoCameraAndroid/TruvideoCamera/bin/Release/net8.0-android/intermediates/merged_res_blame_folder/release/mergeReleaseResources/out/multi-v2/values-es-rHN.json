@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-72:/values-es-rHN/values-es-rHN.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-79:/values-es-rHN/values-es-rHN.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a4e08e1035614fe3df7e19f5e4647e91/transformed/core-1.31.0/res/values-es-rHN/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/43018b644ffb962b9d25fab84a2cab12/transformed/core-1.47.0/res/values-es-rHN/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
@@ -23,10 +23,10 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-74:/values-es-rHN/values-es-rHN.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-77:/values-es-rHN/values-es-rHN.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a4e08e1035614fe3df7e19f5e4647e91/transformed/core-1.31.0/res/values-es-rHN/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/43018b644ffb962b9d25fab84a2cab12/transformed/core-1.47.0/res/values-es-rHN/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

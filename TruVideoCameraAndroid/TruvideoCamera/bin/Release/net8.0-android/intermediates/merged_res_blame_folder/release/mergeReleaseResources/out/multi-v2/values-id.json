@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-72:/values-id/values-id.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-77:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a4e08e1035614fe3df7e19f5e4647e91/transformed/core-1.31.0/res/values-id/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "485,544,591,723",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "539,586,718,827"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/43018b644ffb962b9d25fab84a2cab12/transformed/core-1.47.0/res/values-id/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
@@ -23,10 +40,27 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-74:/values-id/values-id.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-79:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a4e08e1035614fe3df7e19f5e4647e91/transformed/core-1.31.0/res/values-id/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "485,544,591,723",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "539,586,718,827"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/43018b644ffb962b9d25fab84a2cab12/transformed/core-1.47.0/res/values-id/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

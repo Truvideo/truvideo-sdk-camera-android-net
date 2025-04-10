@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-72:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-79:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/res/values-night/themes.xml",
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-74:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-77:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/res/values-night/themes.xml",

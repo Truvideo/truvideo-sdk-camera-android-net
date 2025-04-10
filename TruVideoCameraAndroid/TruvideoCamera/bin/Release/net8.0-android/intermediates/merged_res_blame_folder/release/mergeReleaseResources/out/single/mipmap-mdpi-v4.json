@@ -1,10 +1,10 @@
 [
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/mipmap-mdpi-v4/ic_launcher_round.webp",
-        "source": "com.truvideo.camera.TruvideoCamera-main-75:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-79:/mipmap-mdpi-v4/ic_launcher.webp",
+        "source": "com.truvideo.camera.TruvideoCamera-main-80:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/mipmap-mdpi-v4/ic_launcher.webp",
-        "source": "com.truvideo.camera.TruvideoCamera-main-75:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-79:/mipmap-mdpi-v4/ic_launcher_round.webp",
+        "source": "com.truvideo.camera.TruvideoCamera-main-80:/mipmap-mdpi/ic_launcher_round.webp"
     }
 ]

@@ -1,14 +1,14 @@
 [
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/layout-land/material_timepicker.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-51:/layout-land/material_timepicker.xml"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-79:/layout-land/material_timepicker.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-55:/layout-land/material_timepicker.xml"
     },
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/layout-land/material_clock_period_toggle_land.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-51:/layout-land/material_clock_period_toggle_land.xml"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-79:/layout-land/mtrl_picker_header_dialog.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-55:/layout-land/mtrl_picker_header_dialog.xml"
     },
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-74:/layout-land/mtrl_picker_header_dialog.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-51:/layout-land/mtrl_picker_header_dialog.xml"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-79:/layout-land/material_clock_period_toggle_land.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-55:/layout-land/material_clock_period_toggle_land.xml"
     }
 ]

@@ -764,6 +764,14 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -1083,6 +1091,16 @@
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_transparent">#80FFFFFF</color>
+    <color name="zxing_custom_possible_result_points">#903A89CF</color>
+    <color name="zxing_custom_result_view">#b0000000</color>
+    <color name="zxing_custom_viewfinder_laser">#1976D2</color>
+    <color name="zxing_custom_viewfinder_mask">#60000000</color>
+    <color name="zxing_possible_result_points">#c0ffbd21</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_laser">#ffcc0000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -2058,6 +2076,7 @@
     <item name="ghost_view" type="id"/>
     <item name="ghost_view_holder" type="id"/>
     <item name="glide_custom_view_target_tag" type="id"/>
+    <item name="hide_graphics_layer_in_inspector_tag" type="id"/>
     <item name="hide_in_inspector_tag" type="id"/>
     <item name="home" type="id"/>
     <item name="inspection_slot_table_set" type="id"/>
@@ -2135,6 +2154,15 @@
     <id name="view_tree_view_model_store_owner"/>
     <item name="visible_removing_fragment_view_tag" type="id"/>
     <item name="wrapped_composition_tag" type="id"/>
+    <item name="zxing_back_button" type="id"/>
+    <item name="zxing_camera_closed" type="id"/>
+    <item name="zxing_camera_error" type="id"/>
+    <item name="zxing_decode" type="id"/>
+    <item name="zxing_decode_failed" type="id"/>
+    <item name="zxing_decode_succeeded" type="id"/>
+    <item name="zxing_possible_result_points" type="id"/>
+    <item name="zxing_preview_failed" type="id"/>
+    <item name="zxing_prewiew_size_ready" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
@@ -2145,6 +2173,7 @@
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
     <integer name="exo_media_button_opacity_percentage_disabled">33</integer>
     <integer name="exo_media_button_opacity_percentage_enabled">100</integer>
+    <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="m3_badge_max_number">999</integer>
     <integer name="m3_btn_anim_delay_ms">100</integer>
@@ -2175,6 +2204,7 @@
     <integer name="m3_sys_shape_corner_large_corner_family">0</integer>
     <integer name="m3_sys_shape_corner_medium_corner_family">0</integer>
     <integer name="m3_sys_shape_corner_small_corner_family">0</integer>
+    <integer name="m3c_window_layout_in_display_cutout_mode">1</integer>
     <integer name="material_motion_duration_long_1">300</integer>
     <integer name="material_motion_duration_long_2">350</integer>
     <integer name="material_motion_duration_medium_1">200</integer>
@@ -2252,6 +2282,7 @@
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">truvideoCamera</string>
     <string name="app_name_camera">TruVideoSDK-Camera</string>
+    <string name="app_version" translatable="false">null</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an accessibility action to collapse the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
@@ -2272,8 +2303,27 @@
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="close_drawer">"Close navigation menu"</string>
     <string name="close_sheet">"Close sheet"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are missing from your device.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue"><ns2:g id="app_name">%1$s</ns2:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are not supported by your device.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns1:ignore="ExtraTranslation">"Pop-Up Window"</string>
+    <string name="define_zxingandroidembedded" translatable="false"/>
     <string name="dropdown_menu">"Dropdown menu"</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
@@ -2340,6 +2390,15 @@
     <string name="indeterminate">Partially checked</string>
     <string name="item_view_role_description">Tab</string>
     <string name="lib_name">Filament Android</string>
+    <string name="library_zxingandroidembedded_author" translatable="false">JourneyApps</string>
+    <string name="library_zxingandroidembedded_authorWebsite" translatable="false">https://journeyapps.com/</string>
+    <string name="library_zxingandroidembedded_isOpenSource" translatable="false">true</string>
+    <string name="library_zxingandroidembedded_libraryDescription" translatable="false">Barcode scanning library for Android, using ZXing for decoding.</string>
+    <string name="library_zxingandroidembedded_libraryName" translatable="false">ZXing Android Embedded</string>
+    <string name="library_zxingandroidembedded_libraryVersion" translatable="false"/>
+    <string name="library_zxingandroidembedded_libraryWebsite" translatable="false">https://github.com/journeyapps/zxing-android-embedded</string>
+    <string name="library_zxingandroidembedded_licenseId" translatable="false">apache_2_0</string>
+    <string name="library_zxingandroidembedded_repositoryLink" translatable="false">https://github.com/journeyapps/zxing-android-embedded</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string name="m3_ref_typeface_brand_medium" translatable="false">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular" translatable="false">sans-serif</string>
@@ -2399,6 +2458,7 @@
     <string name="m3c_dialog">"Dialog"</string>
     <string name="m3c_dropdown_menu_collapsed">Collapsed</string>
     <string name="m3c_dropdown_menu_expanded">Expanded</string>
+    <string name="m3c_dropdown_menu_toggle">Toggle dropdown menu</string>
     <string name="m3c_search_bar_search">Search</string>
     <string name="m3c_snackbar_dismiss">Dismiss</string>
     <string name="m3c_suggestions_available">Suggestions below</string>
@@ -2508,8 +2568,6 @@
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
     <string name="navigation_menu">"Navigation menu"</string>
     <string name="not_selected">Not selected</string>
-    <string name="off">Off</string>
-    <string name="on">On</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -2533,13 +2591,21 @@
     <string name="selected">Selected</string>
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
+    <string name="state_empty">Empty</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
     <string name="template_percent"><ns2:g id="percentage">%1$d</ns2:g> percent.</string>
     <string name="title_activity_camera_compose">CameraActivityCompose</string>
+    <string name="title_activity_scanner">ScannerActivity</string>
     <string name="tooltip_description">tooltip</string>
     <string name="tooltip_label">show tooltip</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="zxing_msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -5954,6 +6020,19 @@
     </style>
     <style name="DialogWindowTheme">
         <item name="android:windowClipToOutline">false</item>
+    </style>
+    <style name="EdgeToEdgeFloatingDialogTheme" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="android:windowLayoutInDisplayCutoutMode" ns1:targetApi="27">@integer/m3c_window_layout_in_display_cutout_mode</item>
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowElevation">0dp</item>
+    </style>
+    <style name="EdgeToEdgeFloatingDialogWindowTheme">
+        <item name="android:dialogTheme">@style/EdgeToEdgeFloatingDialogTheme</item>
     </style>
     <style name="ExoMediaButton">
     <item name="android:background">?android:attr/selectableItemBackground</item>
@@ -9855,6 +9934,8 @@
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
+    <style name="zxing_CaptureTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+  </style>
     <declare-styleable name="ActionBar">
         
         <attr name="navigationMode">
@@ -12506,6 +12587,19 @@
         
         <attr name="android:dropDownHorizontalOffset"/>
     </declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr>
+
+<attr format="float" name="imageAspectRatio"/>
+
+<attr format="boolean" name="circleCrop"/>
+</declare-styleable>
     <declare-styleable name="MaterialAlertDialog">
     <attr name="backgroundTint"/>
     <attr format="dimension" name="backgroundInsetStart"/>
@@ -13590,6 +13684,25 @@
     <attr format="reference" name="coplanarSiblingViewId"/>
 
   </declare-styleable>
+    <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr>
+<attr format="reference" name="colorScheme">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr>
+
+<attr format="reference|string" name="scopeUris"/>
+</declare-styleable>
     <declare-styleable name="Slider">
     <attr name="android:value"/>
     <attr name="android:valueFrom"/>
@@ -14439,6 +14552,26 @@
     <declare-styleable name="include">
         <attr name="constraintSet"/>
     </declare-styleable>
+    <declare-styleable name="zxing_camera_preview">
+    <attr format="dimension" name="zxing_framing_rect_width"/>
+    <attr format="dimension" name="zxing_framing_rect_height"/>
+    <attr format="boolean" name="zxing_use_texture_view"/>
+    <attr format="enum" name="zxing_preview_scaling_strategy">
+      <enum name="centerCrop" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitXY" value="3"/>
+    </attr>
+  </declare-styleable>
+    <declare-styleable name="zxing_finder">
+    <attr format="color" name="zxing_possible_result_points"/>
+    <attr format="color" name="zxing_result_view"/>
+    <attr format="color" name="zxing_viewfinder_laser"/>
+    <attr format="color" name="zxing_viewfinder_mask"/>
+    <attr format="boolean" name="zxing_viewfinder_laser_visibility"/>
+  </declare-styleable>
+    <declare-styleable name="zxing_view">
+    <attr format="reference" name="zxing_scanner_layout"/>
+  </declare-styleable>
     <macro name="m3_comp_assist_chip_container_shape">?attr/shapeAppearanceCornerSmall</macro>
     <macro name="m3_comp_assist_chip_label_text_type">?attr/textAppearanceLabelLarge</macro>
     <macro name="m3_comp_badge_color">?attr/colorError</macro>
