@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <TargetFramework>net8.0-android</TargetFramework>
         <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
@@ -63,7 +63,7 @@
     <!--    Camera Module Jar/aar-->
 
     <ItemGroup Condition="$(TargetFramework.Contains('android'))">
-        <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\truvideo-sdk-android-camera-76.2.5.aar">
+        <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\truvideo-sdk-android-camera-76.3.9.aar">
             <Bind>false</Bind>
             <Visible>false</Visible>
         </AndroidLibrary>
@@ -173,6 +173,7 @@
             <Visible>false</Visible>
         </AndroidLibrary>
     </ItemGroup>
+
     <ItemGroup Condition="$(TargetFramework.Contains('android'))">
         <AndroidLibrary Include="..\TruVideoCameraAndroid/TruvideoCamera/libs\core-1.47.0.aar">
             <Bind>false</Bind>

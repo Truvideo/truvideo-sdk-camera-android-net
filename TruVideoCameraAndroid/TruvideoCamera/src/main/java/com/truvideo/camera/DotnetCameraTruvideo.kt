@@ -18,13 +18,16 @@ import kotlinx.coroutines.launch
 
 
 class DotnetCameraTruvideo {
-    // Method to set the listener from .NET MAUI
     fun setDataListener(listener: CameraEventListener) {
         DotnetCameraTruvideo.listener = listener
     }
 
     companion object {
+
+
         private lateinit var mode: TruvideoSdkCameraMode
+
+        // var mode: TruvideoSdkCameraMediaMode? = null
         var mainCallback: CameraCallback? = null
         var listener: CameraEventListener? = null
         var config: TruvideoSdkCameraConfiguration?= null
