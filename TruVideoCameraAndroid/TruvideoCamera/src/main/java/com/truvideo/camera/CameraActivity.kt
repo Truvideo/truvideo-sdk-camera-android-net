@@ -21,6 +21,7 @@ import com.truvideo.sdk.camera.model.events.TruvideoSdkCameraEventRecordingStart
 import com.truvideo.sdk.camera.ui.activities.camera.TruvideoSdkCameraContract
 import kotlinx.coroutines.launch
 
+
 class CameraActivity : ComponentActivity() {
     var cameraScreenLauncher: ActivityResultLauncher<TruvideoSdkCameraConfiguration>? = null
     override fun onCreate(savedInstanceState: Bundle?) {

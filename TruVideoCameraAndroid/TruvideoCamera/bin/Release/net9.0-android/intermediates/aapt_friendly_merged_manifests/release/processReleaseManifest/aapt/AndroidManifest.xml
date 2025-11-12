@@ -21,6 +21,14 @@
 
     <application>
         <activity
+            android:name="com.truvideo.camera.ArCameraActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.truvideo.camera.ScannerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
             android:name="com.truvideo.camera.CameraActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light" />

@@ -43,11 +43,11 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.truvideo.sdk.android.camera)
-    configurations["copyDependencies"].dependencies.add(
-        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:76.3.9")
-    )
-    implementation("com.google.code.gson:gson:2.10.1")
+    /*configurations["copyDependencies"].dependencies.add(
+        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:78.1.16")
+    )*/
 
+    implementation("com.google.code.gson:gson:2.10.1")
 }
 configurations.all {
     resolutionStrategy.eachDependency {

@@ -7,6 +7,7 @@ import android.util.Log
 import androidx.startup.AppInitializer
 import com.truvideo.sdk.camera.TruvideoSdkCamera
 import com.truvideo.sdk.camera.TruvideoSdkCameraInitializer
+import com.truvideo.sdk.camera.model.TruvideoSdkArCameraConfiguration
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraConfiguration
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraFlashMode
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraLensFacing
@@ -31,6 +32,7 @@ class DotnetCameraTruvideo {
         var mainCallback: CameraCallback? = null
         var listener: CameraEventListener? = null
         var config: TruvideoSdkCameraConfiguration?= null
+        var ArConfig: TruvideoSdkArCameraConfiguration?= null
 
         @JvmStatic
         fun environment(callback: CameraCallback) {
@@ -81,7 +83,7 @@ class DotnetCameraTruvideo {
             modeConfig: ModeTypeConfig,
             callback: CameraCallback
         ) {
-            CoroutineScope(Dispatchers.Main).launch {
+            CoroutineScope(Dispatchers.IO).launch {
                 AppInitializer.getInstance(context.applicationContext)
                     .initializeComponent(TruvideoSdkCameraInitializer::class.java)
                 mainCallback = callback
@@ -142,11 +144,94 @@ class DotnetCameraTruvideo {
                 mode = mode
             )
                 config=configuration;
-                val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
+                CoroutineScope(Dispatchers.Main).launch {
+                    val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                    context.applicationContext.startActivity(intent)
+                }
+
+                /*val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
+                    flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                }
+                context.applicationContext.startActivity(intent)*/
+
+        }
+    }
+
+
+        @JvmStatic
+        fun initArScreen(
+            context: Context,
+            orientationValue: OrientationMode?,
+            modeConfig: ModeTypeConfig,
+            callback: CameraCallback
+        ) {
+            CoroutineScope(Dispatchers.IO).launch {
+                AppInitializer.getInstance(context.applicationContext)
+                    .initializeComponent(TruvideoSdkCameraInitializer::class.java)
+                mainCallback = callback
+                val orientationType = OrientationConverter.videoOrientationType(orientationValue)
+                val modeType = ModeConverter.convertModeType(modeConfig)
+                if (modeType is VideoAndPicture) {
+                    mode= TruvideoSdkCameraMode.videoAndImage(modeType.videoCount, modeType.pictureCount, modeType.videoDuration)
+                } else if (modeType is SinglePicture) {
+                    mode=TruvideoSdkCameraMode.singleImage()
+                } else if (modeType is SingleVideo) {
+                    mode=TruvideoSdkCameraMode.singleVideo(modeType.videoDuration)
+                } else if (modeType is Picture) {
+                    mode=TruvideoSdkCameraMode.image(modeType.pictureCount)
+                } else if (modeType is Video) {
+                    mode=TruvideoSdkCameraMode.video(modeType.videoCount,modeType.videoDuration)
+
+                } else if (modeType is SingleVideoOrPicture) {
+                    mode=TruvideoSdkCameraMode.singleVideoOrImage(modeType.videoDuration)
+                }
+                val orientation =
+                    if (orientationType == TruVideoSdkCameraOrientation.PORTRAIT) {
+                        TruvideoSdkCameraOrientation.PORTRAIT
+                    } else if (orientationType == TruVideoSdkCameraOrientation.PORTRAIT_REVERSE) {
+                        TruvideoSdkCameraOrientation.PORTRAIT_REVERSE
+                    } else if (orientationType == TruVideoSdkCameraOrientation.LANDSCAPE_LEFT) {
+                        TruvideoSdkCameraOrientation.LANDSCAPE_LEFT
+                    } else if (orientationType == TruVideoSdkCameraOrientation.LANDSCAPE_RIGHT) {
+                        TruvideoSdkCameraOrientation.LANDSCAPE_RIGHT
+                    } else {
+                        null
+                    }
+                val outputPath = context.filesDir.path + "/camera"
+                val configuration = TruvideoSdkArCameraConfiguration(
+                    orientation = orientation,
+                    outputPath = outputPath,
+                    mode = mode
+                )
+                mainCallback = callback
+                ArConfig=configuration;
+                val intent = Intent(context.applicationContext, ArCameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
                 context.applicationContext.startActivity(intent)
 
+            }
         }
-    }
+
+
+        @JvmStatic
+        fun initScannerScreen(
+            context: Context,
+            orientationValue: OrientationMode?,
+            modeConfig: ModeTypeConfig,
+            callback: CameraCallback
+        ) {
+            CoroutineScope(Dispatchers.IO).launch {
+                AppInitializer.getInstance(context.applicationContext)
+                    .initializeComponent(TruvideoSdkCameraInitializer::class.java)
+                mainCallback = callback
+                val intent = Intent(context.applicationContext, ScannerActivity::class.java).apply {
+                    flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                }
+                context.applicationContext.startActivity(intent)
+
+            }
+        }
 }}

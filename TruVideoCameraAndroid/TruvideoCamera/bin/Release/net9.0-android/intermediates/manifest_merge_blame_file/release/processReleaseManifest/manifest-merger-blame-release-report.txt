@@ -16,11 +16,11 @@
 10-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:7:22-62
 11
 12    <uses-feature
-12-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:8:5-10:35
+12-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:9:5-11:35
 13        android:name="android.hardware.camera"
-13-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:9:9-47
+13-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:10:9-47
 14        android:required="true" />
-14-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:10:9-32
+14-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:11:9-32
 15    <uses-feature
 15-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:12:5-14:35
 16        android:name="android.hardware.camera.any"
@@ -28,22 +28,38 @@
 17        android:required="true" />
 17-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:14:9-32
 18    <uses-feature
-18-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:16:5-18:36
+18-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:15:5-17:36
 19        android:name="android.hardware.camera.autofocus"
-19-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:17:9-57
+19-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:16:9-57
 20        android:required="false" />
-20-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:18:9-33
+20-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:17:9-33
 21
 22    <application>
-22-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:20:5-27:19
+22-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:19:5-32:19
 23        <activity
-23-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:22:9-25:60
-24            android:name="com.truvideo.camera.CameraActivity"
-24-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:23:13-43
+23-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:20:9-23:60
+24            android:name="com.truvideo.camera.ArCameraActivity"
+24-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:21:13-45
 25            android:exported="true"
-25-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:24:13-36
+25-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:22:13-36
 26            android:theme="@style/Theme.AppCompat.Light" />
-26-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:25:13-57
-27    </application>
-28
-29</manifest>
+26-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:23:13-57
+27        <activity
+27-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:24:9-27:60
+28            android:name="com.truvideo.camera.ScannerActivity"
+28-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:25:13-44
+29            android:exported="true"
+29-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:26:13-36
+30            android:theme="@style/Theme.AppCompat.Light" />
+30-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:27:13-57
+31        <activity
+31-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:28:9-31:60
+32            android:name="com.truvideo.camera.CameraActivity"
+32-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:29:13-43
+33            android:exported="true"
+33-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:30:13-36
+34            android:theme="@style/Theme.AppCompat.Light" />
+34-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:31:13-57
+35    </application>
+36
+37</manifest>

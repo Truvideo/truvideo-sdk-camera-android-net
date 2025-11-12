@@ -7,7 +7,10 @@ int color teal_700 0x0
 int color white 0x0
 int drawable ic_launcher_background 0x0
 int drawable ic_launcher_foreground 0x0
+int id main 0x0
+int layout activity_ar_camera 0x0
 int layout activity_camera 0x0
+int layout activity_scanner 0x0
 int mipmap ic_launcher 0x0
 int mipmap ic_launcher_round 0x0
 int string app_name 0x0

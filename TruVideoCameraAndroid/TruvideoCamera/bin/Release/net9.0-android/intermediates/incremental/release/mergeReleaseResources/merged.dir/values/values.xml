@@ -2118,11 +2118,13 @@
     <item name="tag_accessibility_clickable_spans" type="id"/>
     <item name="tag_accessibility_heading" type="id"/>
     <item name="tag_accessibility_pane_title" type="id"/>
+    <item name="tag_compat_insets_dispatch" type="id"/>
     <item name="tag_on_apply_window_listener" type="id"/>
     <item name="tag_on_receive_content_listener" type="id"/>
     <item name="tag_on_receive_content_mime_types" type="id"/>
     <item name="tag_screen_reader_focusable" type="id"/>
     <item name="tag_state_description" type="id"/>
+    <item name="tag_system_bar_state_monitor" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="tag_unhandled_key_event_manager" type="id"/>
     <item name="tag_unhandled_key_listeners" type="id"/>
@@ -2148,6 +2150,7 @@
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
     <item name="view_transition" type="id"/>
+    <id name="view_tree_disjoint_parent"/>
     <id name="view_tree_lifecycle_owner"/>
     <id name="view_tree_on_back_pressed_dispatcher_owner"/>
     <id name="view_tree_saved_state_registry_owner"/>
@@ -2324,6 +2327,7 @@
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns1:ignore="ExtraTranslation">"Pop-Up Window"</string>
     <string name="define_zxingandroidembedded" translatable="false"/>
+    <string name="distance">0.00</string>
     <string name="dropdown_menu">"Dropdown menu"</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
@@ -2575,13 +2579,15 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
-    <string name="sceneform_add_camera_permission_via_settings">Add camera permission via Settings?</string>
-    <string name="sceneform_camera_permission_required">Camera permission required</string>
-    <string name="sceneform_failed_to_create_ar_session">Failed to create AR session</string>
-    <string name="sceneform_unavailable_apk_too_old">Please update ARCore</string>
-    <string name="sceneform_unavailable_arcore_not_installed">Please install ARCore</string>
-    <string name="sceneform_unavailable_device_not_compatible">This device does not support AR</string>
-    <string name="sceneform_unavailable_sdk_too_old">Please update this app</string>
+    <string name="sceneview_bad_state_message">Tracking lost due to bad internal state.\nPlease try restarting the AR experience.</string>
+    <string name="sceneview_camera_permission_required">Camera permission required</string>
+    <string name="sceneview_camera_unavailable_message">Another app is using the camera.\nTap on this app or try closing the other one.</string>
+    <string name="sceneview_excessive_motion_message">Moving too fast.\nSlow down</string>
+    <string name="sceneview_insufficient_features_message">Can\'t find anything.\nAim device at a surface with more texture or color.</string>
+    <string name="sceneview_insufficient_light_android_s_message">Too dark. Try moving to a well-lit area.\nAlso, make sure the Block Camera is set to off in system settings.</string>
+    <string name="sceneview_insufficient_light_message">Too dark.\nTry moving to a well-lit area.</string>
+    <string name="sceneview_tap_on_surface">Tap on a surface to place an object.</string>
+    <string name="sceneview_unknown_tracking_failure">Unknown tracking failure reason: %1$s</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">
     com.google.android.material.search.SearchBar$ScrollingViewBehavior

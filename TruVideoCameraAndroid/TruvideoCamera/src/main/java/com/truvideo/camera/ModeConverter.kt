@@ -24,7 +24,7 @@ object ModeConverter {
 
             ModeType.VIDEO_AND_PICTURE_COUNTED -> {
                 val count = config.mediaCount ?: 0
-                VideoAndPictureCounted(count, config.videoDuration)
+                VideoAndPictureCounted(count, config.videoAndPictureCountedDuration)
             }
 
             else -> null
