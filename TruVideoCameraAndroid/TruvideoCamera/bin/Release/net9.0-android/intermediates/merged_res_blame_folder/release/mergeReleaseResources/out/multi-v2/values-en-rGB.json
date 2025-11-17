@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-77:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-80:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/f7f53f5385b431711c6505a492128682/transformed/foundation-release/res/values-en-rGB/values-en-rGB.xml",
@@ -197,7 +197,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-79:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-78:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/f7f53f5385b431711c6505a492128682/transformed/foundation-release/res/values-en-rGB/values-en-rGB.xml",

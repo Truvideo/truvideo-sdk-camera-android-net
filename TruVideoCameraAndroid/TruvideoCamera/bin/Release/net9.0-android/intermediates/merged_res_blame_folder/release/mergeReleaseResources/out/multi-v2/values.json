@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-79:/values/values.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-80:/values/values.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values/values.xml",
@@ -243,23 +243,6 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/fa55650951c1153df88d92139cd80835/transformed/glide-5.0.3/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    },
-                    "to": {
-                        "startLines": "2077",
-                        "startColumns": "4",
-                        "startOffsets": "135686",
-                        "endColumns": "57",
-                        "endOffsets": "135739"
-                    }
-                },
-                {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/f7f53f5385b431711c6505a492128682/transformed/foundation-release/res/values/values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -330,22 +313,20 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/fa4b20d1747f28a665586843e41666c7/transformed/truvideo-sdk-android-camera-78.1.16/res/values/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/1c9c5f021c5131e2388d09db9352a245/transformed/glide-5.0.0-rc01/res/values/values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "139,193,256,298,378,445,537,631",
-                        "endLines": "4,5,6,7,8,10,11,12",
-                        "endColumns": "53,62,41,79,66,12,93,58",
-                        "endOffsets": "188,251,293,373,440,532,626,685"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
                     },
                     "to": {
-                        "startLines": "1092,2286,2329,2606,2607,2640,7233,7787",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "62704,148580,153525,183330,183410,185812,503374,544363",
-                        "endLines": "1092,2286,2329,2606,2607,2641,7233,7787",
-                        "endColumns": "53,62,41,79,66,12,93,58",
-                        "endOffsets": "62753,148638,153562,183405,183472,185899,503463,544417"
+                        "startLines": "2077",
+                        "startColumns": "4",
+                        "startOffsets": "135686",
+                        "endColumns": "57",
+                        "endOffsets": "135739"
                     }
                 },
                 {
@@ -611,6 +592,25 @@
                         "startOffsets": "148528",
                         "endColumns": "51",
                         "endOffsets": "148575"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/22c21af55e7e128b4ce3b3f3a994b59b/transformed/truvideo-sdk-android-camera-78.1.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "139,193,256,298,378,445,537,631",
+                        "endLines": "4,5,6,7,8,10,11,12",
+                        "endColumns": "53,62,41,79,66,12,93,58",
+                        "endOffsets": "188,251,293,373,440,532,626,685"
+                    },
+                    "to": {
+                        "startLines": "1092,2286,2329,2606,2607,2640,7233,7787",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "62704,148580,153525,183330,183410,185812,503374,544363",
+                        "endLines": "1092,2286,2329,2606,2607,2641,7233,7787",
+                        "endColumns": "53,62,41,79,66,12,93,58",
+                        "endOffsets": "62753,148638,153562,183405,183472,185899,503463,544417"
                     }
                 },
                 {
@@ -707,7 +707,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-77:/values/values.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-78:/values/values.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values/values.xml",
@@ -949,23 +949,6 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/fa55650951c1153df88d92139cd80835/transformed/glide-5.0.3/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    },
-                    "to": {
-                        "startLines": "2077",
-                        "startColumns": "4",
-                        "startOffsets": "135686",
-                        "endColumns": "57",
-                        "endOffsets": "135739"
-                    }
-                },
-                {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/f7f53f5385b431711c6505a492128682/transformed/foundation-release/res/values/values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -1036,22 +1019,20 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/fa4b20d1747f28a665586843e41666c7/transformed/truvideo-sdk-android-camera-78.1.16/res/values/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/1c9c5f021c5131e2388d09db9352a245/transformed/glide-5.0.0-rc01/res/values/values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "139,193,256,298,378,445,537,631",
-                        "endLines": "4,5,6,7,8,10,11,12",
-                        "endColumns": "53,62,41,79,66,12,93,58",
-                        "endOffsets": "188,251,293,373,440,532,626,685"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
                     },
                     "to": {
-                        "startLines": "1092,2286,2329,2606,2607,2640,7233,7787",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "62704,148580,153525,183330,183410,185812,503374,544363",
-                        "endLines": "1092,2286,2329,2606,2607,2641,7233,7787",
-                        "endColumns": "53,62,41,79,66,12,93,58",
-                        "endOffsets": "62753,148638,153562,183405,183472,185899,503463,544417"
+                        "startLines": "2077",
+                        "startColumns": "4",
+                        "startOffsets": "135686",
+                        "endColumns": "57",
+                        "endOffsets": "135739"
                     }
                 },
                 {
@@ -1317,6 +1298,25 @@
                         "startOffsets": "148528",
                         "endColumns": "51",
                         "endOffsets": "148575"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/22c21af55e7e128b4ce3b3f3a994b59b/transformed/truvideo-sdk-android-camera-78.1.1/res/values/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "139,193,256,298,378,445,537,631",
+                        "endLines": "4,5,6,7,8,10,11,12",
+                        "endColumns": "53,62,41,79,66,12,93,58",
+                        "endOffsets": "188,251,293,373,440,532,626,685"
+                    },
+                    "to": {
+                        "startLines": "1092,2286,2329,2606,2607,2640,7233,7787",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "62704,148580,153525,183330,183410,185812,503374,544363",
+                        "endLines": "1092,2286,2329,2606,2607,2641,7233,7787",
+                        "endColumns": "53,62,41,79,66,12,93,58",
+                        "endOffsets": "62753,148638,153562,183405,183472,185899,503463,544417"
                     }
                 },
                 {

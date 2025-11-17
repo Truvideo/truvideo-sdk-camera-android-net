@@ -144,21 +144,13 @@ class DotnetCameraTruvideo {
                 mode = mode
             )
                 config=configuration;
-                CoroutineScope(Dispatchers.Main).launch {
-                    val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
-                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
-                    }
-                    context.applicationContext.startActivity(intent)
-                }
-
-                /*val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
+                val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
-                context.applicationContext.startActivity(intent)*/
+                context.applicationContext.startActivity(intent)
 
         }
     }
-
 
         @JvmStatic
         fun initArScreen(
@@ -207,6 +199,7 @@ class DotnetCameraTruvideo {
                 )
                 mainCallback = callback
                 ArConfig=configuration;
+                Log.e("Rahul",""+ArConfig)
                 val intent = Intent(context.applicationContext, ArCameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }

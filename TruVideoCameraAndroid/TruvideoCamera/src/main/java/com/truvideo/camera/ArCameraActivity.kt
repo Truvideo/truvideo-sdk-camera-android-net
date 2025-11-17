@@ -155,6 +155,8 @@ class ArCameraActivity : AppCompatActivity() {
             outputPath = outputPath,
             mode = mode
         )*/
+
+        Log.e("Rahul222222",""+ DotnetCameraTruvideo.ArConfig)
         launcher.launch(DotnetCameraTruvideo.ArConfig!!)
     }
 }

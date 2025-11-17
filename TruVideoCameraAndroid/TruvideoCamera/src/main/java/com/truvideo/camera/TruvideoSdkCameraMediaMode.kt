@@ -5,22 +5,22 @@ interface TruvideoSdkCameraMediaMode
 class VideoAndPicture(
     val videoCount: Int?,
     val pictureCount: Int?,
-    val videoDuration: Int?
+    val videoDuration: Double?
 ) : TruvideoSdkCameraMediaMode
 
 class SingleVideo(
-    val videoDuration: Int?
+    val videoDuration: Double?
 ) : TruvideoSdkCameraMediaMode
 
 class SinglePicture : TruvideoSdkCameraMediaMode
 
 class SingleVideoOrPicture(
-    val videoDuration: Int?
+    val videoDuration: Double?
 ) : TruvideoSdkCameraMediaMode
 
 class Video(
     val videoCount: Int?,
-    val videoDuration: Int?
+    val videoDuration: Double?
 ) : TruvideoSdkCameraMediaMode
 
 class Picture(
@@ -29,5 +29,5 @@ class Picture(
 
 class VideoAndPictureCounted(
     val mediaCount: Int,
-    val videoDuration: Int?
+    val videoDuration: Double?
 ) : TruvideoSdkCameraMediaMode
