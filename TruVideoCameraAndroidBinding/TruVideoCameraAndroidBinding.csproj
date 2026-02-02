@@ -1,8 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Version>1.0.2</Version>
+        <Version>1.0.1</Version>
         <TargetFramework>net10.0-android</TargetFramework>
+        <MauiVersion>10.0.10</MauiVersion>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <IsBindingProject>true</IsBindingProject>
@@ -11,9 +12,7 @@
         <GenerateLibraryLayout>false</GenerateLibraryLayout>
         <AndroidUseIntermediateDesignerFile>false</AndroidUseIntermediateDesignerFile>
         <AndroidClassParser>class-parse</AndroidClassParser>
-
-        <!-- Required to suppress false downgrade warnings -->
-        <NoWarn>NU1605;XA0141</NoWarn>
+        <NoWarn>XA0141</NoWarn>
     </PropertyGroup>
 
     <!-- Gradle Project Reference -->
@@ -26,60 +25,52 @@
     <!-- NuGet Dependencies -->
     <ItemGroup>
         <!-- MAUI -->
-        <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.0" />
-        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="10.0.0" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 
         <!-- Glide -->
-        <PackageReference Include="Xamarin.Android.Glide" Version="4.16.0" />
-        <PackageReference Include="Xamarin.Android.Glide.Annotations" Version="4.16.0" />
-        <PackageReference Include="Xamarin.Android.Glide.DiskLruCache" Version="4.16.0" />
-        <PackageReference Include="Xamarin.Android.Glide.GifDecoder" Version="4.16.0" />
-
-        <!-- Jetpack Compose CORE (latest available) -->
-        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout.Android" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Android" Version="1.8.3.1" />
-
-        <!-- Icons → ONLY 1.7.8.3 exists on NuGet -->
-        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Core" Version="1.7.8.3" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Extended" Version="1.7.8.3" />
-
-        <!-- Jetpack Compose runtime/UI overrides to stop NU1605 -->
-        <PackageReference Include="Xamarin.AndroidX.Compose.Runtime" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Android" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Geometry" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text.Android" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.8.3.1" />
-        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util.Android" Version="1.8.3.1" />
-
-        <!-- Material3 -->
+        <PackageReference Include="Xamarin.Android.Glide" Version="4.16.0.14" />
+        <PackageReference Include="Xamarin.Android.Glide.Annotations" Version="4.16.0.14" />
+        <!-- Glide (stable v4.16.0) -->
+        <PackageReference Include="Xamarin.Android.Glide.DiskLruCache" Version="4.16.0.14" />
+        <PackageReference Include="Xamarin.Android.Glide.GifDecoder" Version="4.16.0.14" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout.Android" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Android" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Core" Version="1.7.8.1" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Extended" Version="1.7.8.1" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Runtime" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Android" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Geometry" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text.Android" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.8.3" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util.Android" Version="1.8.3" />
         <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.3.1" />
-
+        
         <!-- AndroidX & Kotlin -->
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.21.3" />
+        <PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.5.0.3" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.2.0.1" />
         <PackageReference Include="Xamarin.Google.Guava" Version="33.3.1.1" />
-
+        
         <!-- Lifecycle -->
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.9.2.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.9.2.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.9.2.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx" Version="2.9.2.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.9.2.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.9.2.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.9.2.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.9.2.1" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.9.2.1" />
-
-        <!-- Activity / KTX -->
-        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.10.1.1" />
-        <PackageReference Include="Xamarin.AndroidX.Activity.Ktx" Version="1.10.1.3" />
-        <PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.5.0.3" />
-
-        <!-- Media3 -->
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.9.1" />
+        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.9.3" />
+        
+        <!-- ✅ Media3 latest NuGets -->
         <PackageReference Include="Xamarin.AndroidX.Media3.ExoPlayer" Version="1.4.1.1" />
         <PackageReference Include="Xamarin.AndroidX.Media3.UI" Version="1.4.1.1" />
         <PackageReference Include="Xamarin.AndroidX.Media3.Common" Version="1.4.1.1" />
@@ -91,55 +82,77 @@
     </ItemGroup>
 
     <!-- Android AAR/JAR references -->
-    <ItemGroup>
+    <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
+        <!-- TruVideo Camera SDK -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-camera-78.1.1.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-components-0.1.20.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-1.0.5.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-exceptions-1.0.2.jar" Bind="false" Visible="false" />
-
-        <!-- Compose addons -->
+        
+        <!-- Jetpack Compose integration for Camera SDK -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\compose-1.0.0-beta01.aar" Bind="false" Visible="false" />
-
-        <!-- Kotlin extensions -->
+        
+        <!-- Kotlin extensions for Camera SDK -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\ktx-1.0.0-beta01.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\kotlinx-collections-immutable-jvm-0.3.8.jar" Bind="false" Visible="false" />
-
-        <!-- AndroidX Core runtime -->
+        
+        <!-- AndroidX Core runtime (required by Camera SDK) -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\core-1.47.0.aar" Bind="false" Visible="false" />
-
-        <!-- Sceneform / 3D -->
+        
+        <!--SCENEFORM / AR framework (3D rendering support) -->
+        <!-- Core Sceneform AR library -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sceneform-1.23.0.aar" Bind="false" Visible="false" />
+
+        <!-- High-level SceneView library for easier 3D scene management -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sceneview-2.3.0.aar" Bind="false" Visible="false" />
+
+        <!-- Filament rendering engine libraries -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\filament-android-1.56.0.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\filament-utils-android-1.56.0.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\gltfio-android-1.56.0.aar" Bind="false" Visible="false" />
+
+        <!-- Kotlin Math library required by Sceneform / SceneView -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\kotlin-math-jvm-1.5.3.jar" Bind="false" Visible="false" />
 
-        <!-- Barcode Scanner -->
+        <!-- ARSceneView: ARCore integration for SceneView -->
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\arsceneview-2.3.0.aar" Bind="false" Visible="false" />
+
+        <!-- Scanner framework (Barcode Scanning) -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\barcode-scanning-17.3.0.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\barcode-scanning-common-17.0.0.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\vision-common-17.3.0.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\vision-interfaces-16.3.0.aar" Bind="false" Visible="false" />
 
-        <!-- MLKit Barcode -->
+        <!-- Play Services ML Kit Barcode -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\play-services-mlkit-barcode-scanning-18.3.1.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\play-services-base-18.5.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\play-services-basement-18.4.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\play-services-tasks-18.2.0.aar" Bind="false" Visible="false" />
 
-        <!-- Google Play Services -->
-        <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="118.5.0.4" />
-        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="118.5.0.1" />
-        <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="118.2.0.4" />
-
-        <!-- MLKit Common -->
+        <!-- ML Kit Common runtime library -->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\common-18.0.0.aar" Bind="false" Visible="false" />
 
-        <!-- Firebase -->
-        <PackageReference Include="Xamarin.Firebase.Components" Version="117.0.0.2" />
-        <PackageReference Include="Xamarin.Firebase.Annotations" Version="116.0.0" />
-        <PackageReference Include="Xamarin.Firebase.Encoders" Version="117.0.0.20" />
-        <PackageReference Include="Xamarin.Firebase.Encoders.JSON" Version="118.0.1.8" />
-        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportApi" Version="4.0.0.2" />
-        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportBackendCct" Version="3.2.0.3" />
-        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportRuntime" Version="4.0.0.2" />
+        <!-- Firebase dependencies (required by ML Kit) -->
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\firebase-annotations-16.0.0.jar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\firebase-components-16.1.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\firebase-encoders-16.1.0.jar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\firebase-encoders-json-17.1.0.aar" Bind="false" Visible="false" />
+
+        <!-- Data Transport libraries (for ML Kit logging / analytics) -->
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\transport-api-2.2.1.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\transport-backend-cct-2.3.3.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\transport-runtime-2.2.6.aar" Bind="false" Visible="false" />
+
+        <!-- Dependency Injection (Dagger) for Data Transport -->
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\dagger-2.40.5.jar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\javax.inject-1.jar" Bind="false" Visible="false" />
+
+        <!-- Dependency Koin -->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-android-3.5.0.aar" Bind="false" Visible="false" />-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-androidx-compose-3.5.0.aar" Bind="false" Visible="false" />-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-compose-jvm-1.1.0.jar" Bind="false" Visible="false" />-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-core-jvm-3.5.0.jar" Bind="false" Visible="false" />-->
+        
     </ItemGroup>
 
     <!-- Native Library Interop -->
@@ -152,158 +165,5 @@
 
 
 
-        <!--<Project Sdk="Microsoft.NET.Sdk">-->
 
-<!--    <PropertyGroup>-->
-<!--        <Version>1.0.2</Version>-->
-<!--        <TargetFramework>net10.0-android</TargetFramework>-->
-<!--        <Nullable>enable</Nullable>-->
-<!--        <ImplicitUsings>enable</ImplicitUsings>-->
-<!--        <IsBindingProject>true</IsBindingProject>-->
-<!--        <RepositoryUrl>https://github.com/Truvideo/truvideo-sdk-camera-android-net</RepositoryUrl>-->
-<!--        <SupportedOSPlatformVersion>24.0</SupportedOSPlatformVersion>-->
-<!--        <GenerateLibraryLayout>false</GenerateLibraryLayout>-->
-<!--        <AndroidUseIntermediateDesignerFile>false</AndroidUseIntermediateDesignerFile>-->
-<!--        <AndroidClassParser>class-parse</AndroidClassParser>-->
-<!--        <NoWarn>XA0141</NoWarn>-->
-<!--    </PropertyGroup>-->
-
-<!--    &lt;!&ndash; Gradle Project Reference &ndash;&gt;-->
-<!--    <ItemGroup>-->
-<!--        <NLIGradleProjectReference Include="../TruVideoCameraAndroid">-->
-<!--            <ModuleName>TruvideoCamera</ModuleName>-->
-<!--        </NLIGradleProjectReference>-->
-<!--    </ItemGroup>-->
-
-<!--    &lt;!&ndash; NuGet Dependencies &ndash;&gt;-->
-<!--    <ItemGroup>-->
-<!--        &lt;!&ndash; MAUI &ndash;&gt;-->
-<!--        <PackageReference Include="Microsoft.Maui.Controls" Version="10.0.0" />-->
-<!--        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="10.0.0" />-->
-<!--        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0"/>-->
-
-<!--        &lt;!&ndash; Glide &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.Android.Glide" Version="4.16.0" />-->
-<!--        <PackageReference Include="Xamarin.Android.Glide.Annotations" Version="4.16.0" />-->
-<!--        &lt;!&ndash; Glide (stable v4.16.0) &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.Android.Glide.DiskLruCache" Version="4.16.0" />-->
-<!--        <PackageReference Include="Xamarin.Android.Glide.GifDecoder" Version="4.16.0" />-->
-<!--        -->
-<!--        &lt;!&ndash; Jetpack Compose &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout.Android" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Android" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Core" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Extended" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Runtime" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Android" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Geometry" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text.Android" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util.Android" Version="1.8.3.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.3.1" />-->
-<!--        -->
-<!--        &lt;!&ndash; AndroidX & Kotlin &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.21.3" />-->
-<!--        <PackageReference Include="Xamarin.Google.Guava" Version="33.3.1.1" />-->
-<!--        -->
-<!--        &lt;!&ndash; Lifecycle &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.9.2.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.10.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Activity.Ktx" Version="1.10.1.3" />-->
-<!--        &lt;!&ndash; Fix Collection and Lifecycle versions &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.5.0.3" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.8.7.3" />-->
-<!--        -->
-<!--        &lt;!&ndash; ✅ Media3 latest NuGets &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.ExoPlayer" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.UI" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.Common" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.Extractor" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.DataSource" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.Container" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.Decoder" Version="1.4.1.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Media3.Database" Version="1.4.1.1" />-->
-<!--    </ItemGroup>-->
-
-<!--    &lt;!&ndash; Android AAR/JAR references &ndash;&gt;-->
-<!--    <ItemGroup Condition="'$(TargetFramework)' == 'net9.0-android'">-->
-<!--        &lt;!&ndash; TruVideo Camera SDK &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-camera-78.1.1.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-components-0.1.20.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-1.0.5.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-exceptions-1.0.2.jar" Bind="false" Visible="false" />-->
-<!--        -->
-<!--        &lt;!&ndash; Jetpack Compose integration for Camera SDK &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\compose-1.0.0-beta01.aar" Bind="false" Visible="false" />-->
-<!--        -->
-<!--        &lt;!&ndash; Kotlin extensions for Camera SDK &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\ktx-1.0.0-beta01.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\kotlinx-collections-immutable-jvm-0.3.8.jar" Bind="false" Visible="false" />-->
-<!--        -->
-<!--        &lt;!&ndash; AndroidX Core runtime (required by Camera SDK) &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\core-1.47.0.aar" Bind="false" Visible="false" />-->
-<!--        -->
-<!--        &lt;!&ndash;SCENEFORM / AR framework (3D rendering support) &ndash;&gt;-->
-<!--        &lt;!&ndash; Core Sceneform AR library &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sceneform-1.23.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; High-level SceneView library for easier 3D scene management &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sceneview-2.3.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; Filament rendering engine libraries &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\filament-android-1.56.0.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\filament-utils-android-1.56.0.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\gltfio-android-1.56.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; Kotlin Math library required by Sceneform / SceneView &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\kotlin-math-jvm-1.5.3.jar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; ARSceneView: ARCore integration for SceneView &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\arsceneview-2.3.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; Scanner framework (Barcode Scanning) &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\barcode-scanning-17.3.0.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\barcode-scanning-common-17.0.0.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\vision-common-17.3.0.aar" Bind="false" Visible="false" />-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\vision-interfaces-16.3.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; Play Services ML Kit Barcode &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\play-services-mlkit-barcode-scanning-18.3.1.aar" Bind="false" Visible="false" />-->
-<!--        &lt;!&ndash; Google dependencies &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="118.5.0.4" />-->
-<!--        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="118.5.0.1" />-->
-<!--        <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="118.2.0.4" />-->
-
-<!--        &lt;!&ndash; ML Kit Common runtime library &ndash;&gt;-->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\common-18.0.0.aar" Bind="false" Visible="false" />-->
-
-<!--        &lt;!&ndash; Firebase dependencies (required by ML Kit) &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.Firebase.Components" Version="116.1.0.1" />-->
-<!--        <PackageReference Include="Xamarin.Firebase.Annotations" Version="116.0.0" />-->
-<!--        <PackageReference Include="Xamarin.Firebase.Encoders" Version="117.0.0.20" />-->
-<!--        <PackageReference Include="Xamarin.Firebase.Encoders.JSON" Version="118.0.1.8" />-->
-<!--        &lt;!&ndash; Data Transport libraries (for ML Kit logging / analytics) &ndash;&gt;-->
-<!--        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportApi" Version="4.0.0.2" />-->
-<!--        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportBackendCct" Version="3.2.0.3" />-->
-<!--        <PackageReference Include="Xamarin.Google.Android.DataTransport.TransportRuntime" Version="4.0.0.2" />-->
-<!--        -->
-<!--    </ItemGroup>-->
-
-<!--    &lt;!&ndash; Native Library Interop &ndash;&gt;-->
-<!--    <ItemGroup>-->
-<!--        <PackageReference Include="CommunityToolkit.Maui.NativeLibraryInterop.BuildTasks" Version="0.0.1-pre1" />-->
-<!--    </ItemGroup>-->
-
-<!--</Project>-->
+       

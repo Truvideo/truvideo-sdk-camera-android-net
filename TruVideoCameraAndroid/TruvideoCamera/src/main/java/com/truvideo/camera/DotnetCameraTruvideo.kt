@@ -105,6 +105,9 @@ class DotnetCameraTruvideo {
             } else if (modeType is SingleVideoOrPicture) {
                 mode=TruvideoSdkCameraMode.singleVideoOrImage(modeType.videoDuration)
             }
+            else if (modeType is VideoAndPictureCounted) {
+                mode= TruvideoSdkCameraMode.videoAndImage(modeType.mediaCount, modeType.videoDuration)
+            }
 
             val flashMode =
                 if (flashType == TruVideoSdkCameraFlashMode.ON) {
@@ -179,6 +182,9 @@ class DotnetCameraTruvideo {
                 } else if (modeType is SingleVideoOrPicture) {
                     mode=TruvideoSdkCameraMode.singleVideoOrImage(modeType.videoDuration)
                 }
+                else if (modeType is VideoAndPictureCounted) {
+                    mode= TruvideoSdkCameraMode.videoAndImage(modeType.mediaCount, modeType.videoDuration)
+                }
                 val orientation =
                     if (orientationType == TruVideoSdkCameraOrientation.PORTRAIT) {
                         TruvideoSdkCameraOrientation.PORTRAIT
@@ -199,7 +205,7 @@ class DotnetCameraTruvideo {
                 )
                 mainCallback = callback
                 ArConfig=configuration;
-                Log.e("Rahul",""+ArConfig)
+                //Log.e("Rahul",""+ArConfig)
                 val intent = Intent(context.applicationContext, ArCameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
