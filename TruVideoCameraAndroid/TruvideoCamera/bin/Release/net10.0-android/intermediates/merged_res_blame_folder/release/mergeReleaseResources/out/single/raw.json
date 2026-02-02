@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_tiff.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_tiff.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libvorbis.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libvorbis.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/zxing_beep.ogg",
+        "source": "com.truvideo.camera.TruvideoCamera-zxing-android-embedded-4.3.0-41:/raw/zxing_beep.ogg"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_lame.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_lame.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_opus.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_opus.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libass.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libass.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_fribidi.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_fribidi.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libuuid.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libuuid.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_dav1d.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_dav1d.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libsndfile.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libsndfile.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_twolame.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_twolame.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libiconv.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libiconv.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_gnutls.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_gnutls.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_vo_amrwbenc.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_vo_amrwbenc.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_cpu_features.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_cpu_features.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_freetype.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_freetype.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libvpx.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libvpx.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_soxr.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_soxr.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_harfbuzz.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_harfbuzz.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/source.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/source.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libogg.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libogg.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libilbc.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libilbc.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_jpeg.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_jpeg.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_opencore_amr.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_opencore_amr.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libwebp.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libwebp.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libxml2.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libxml2.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/keep_arcore.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.48.0-52:/raw/keep_arcore.xml"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_nettle.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_nettle.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_fontconfig.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_fontconfig.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_giflib.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_giflib.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_gmp.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_gmp.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_shine.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_shine.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_zimg.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_zimg.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_expat.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_expat.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_kvazaar.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_kvazaar.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libtheora.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libtheora.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_speex.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_speex.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_libpng.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_libpng.txt"
+    },
+    {
+        "merged": "com.truvideo.camera.TruvideoCamera-release-80:/raw/license_snappy.txt",
+        "source": "com.truvideo.camera.TruvideoCamera-truvideo-sdk-android-video-utils-1.0.0-17:/raw/license_snappy.txt"
+    }
+]
