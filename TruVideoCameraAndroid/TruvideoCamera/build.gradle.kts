@@ -22,11 +22,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "11"
     }
 
 }
@@ -43,10 +43,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.truvideo.sdk.android.camera)
-    /*configurations["copyDependencies"].dependencies.add(
-        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:78.1.1")
-    )*/
-
+    configurations["copyDependencies"].dependencies.add(
+        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:79.1.1")
+    )
     implementation("com.google.code.gson:gson:2.10.1")
 }
 configurations.all {

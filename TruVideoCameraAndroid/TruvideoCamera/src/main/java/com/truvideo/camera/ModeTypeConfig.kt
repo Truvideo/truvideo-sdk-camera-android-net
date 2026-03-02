@@ -5,6 +5,6 @@ class ModeTypeConfig {
     var videoCount: Int? = null
     var pictureCount: Int? = null
     var mediaCount: Int? = null
-    var videoDuration: Double? = null
-    var videoAndPictureCountedDuration: Double? = null
+    var videoDuration: Long? = null
+    var videoAndPictureCountedDuration: Long? = null
 }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-78:/values-id/values-id.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-76:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/35f9fb1f3f163402c2743551a2970c7c/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/aaa3a158ace0cfbbd5b26552bb7ea3fe/transformed/core-1.48.0/res/values-id/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/df20a07a153803259e46972b1b1cd133/transformed/core-1.48.0/res/values-id/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
@@ -40,10 +40,10 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-80:/values-id/values-id.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-78:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/9a454e74afba0d71d9e78e8766f261be/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/35f9fb1f3f163402c2743551a2970c7c/transformed/zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -60,7 +60,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/aaa3a158ace0cfbbd5b26552bb7ea3fe/transformed/core-1.48.0/res/values-id/values.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/df20a07a153803259e46972b1b1cd133/transformed/core-1.48.0/res/values-id/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",
