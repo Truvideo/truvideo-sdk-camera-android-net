@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-76:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-77:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/39c2200e06456e6ff02c0aebeba19013/transformed/material-1.13.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-78:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-75:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/39c2200e06456e6ff02c0aebeba19013/transformed/material-1.13.0/res/values-w320dp-land-v13/values-w320dp-land-v13.xml",

@@ -9,6 +9,7 @@ import com.truvideo.sdk.camera.TruvideoSdkCamera
 import com.truvideo.sdk.camera.TruvideoSdkCameraInitializer
 import com.truvideo.sdk.camera.model.TruvideoSdkArCameraConfiguration
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraFlashMode
+import com.truvideo.sdk.camera.model.TruvideoSdkCameraImageFormat
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraLensFacing
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraOrientation
 import com.truvideo.sdk.camera.model.external.TruvideoSdkCameraConfiguration
@@ -80,6 +81,7 @@ class DotnetCameraTruvideo {
             outputPathValue: String,
             modeConfig: ModeTypeConfig,
             autoClose: Boolean,
+            streamingUploadValue: Boolean,
             callback: CameraCallback
         ) {
             CoroutineScope(Dispatchers.IO).launch {
@@ -160,10 +162,13 @@ class DotnetCameraTruvideo {
                 frontResolution = null,
                 backResolutions = arrayListOf(),
                 backResolution = null,
-                mode = mode
+                mode = mode,
+                imageFormat = TruvideoSdkCameraImageFormat.JPEG,
+                videoStabilizationEnabled = false,
+                streamingUpload = streamingUploadValue
             )
                 config=configuration;
-                Log.e("Rahul",""+config)
+                //Log.e("Rahul",""+config)
                 val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
@@ -239,7 +244,7 @@ class DotnetCameraTruvideo {
                 )
                 mainCallback = callback
                 ArConfig=configuration;
-                Log.e("Rahul",""+ArConfig)
+               // Log.e("Rahul",""+ArConfig)
                 val intent = Intent(context.applicationContext, ArCameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
@@ -252,8 +257,6 @@ class DotnetCameraTruvideo {
         @JvmStatic
         fun initScannerScreen(
             context: Context,
-            orientationValue: OrientationMode?,
-            modeConfig: ModeTypeConfig,
             callback: CameraCallback
         ) {
             CoroutineScope(Dispatchers.IO).launch {

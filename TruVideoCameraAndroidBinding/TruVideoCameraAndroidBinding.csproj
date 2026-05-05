@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Version>1.0.0-beta.1</Version>
+        <Version>2.0.0</Version>
         <TargetFramework>net10.0-android</TargetFramework>
         <MauiVersion>10.0.10</MauiVersion>
         <Nullable>enable</Nullable>
@@ -9,9 +9,9 @@
         <IsBindingProject>true</IsBindingProject>
         <RepositoryUrl>https://github.com/Truvideo/truvideo-sdk-camera-android-net</RepositoryUrl>
         <SupportedOSPlatformVersion>24.0</SupportedOSPlatformVersion>
-        <GenerateLibraryLayout>false</GenerateLibraryLayout>
-        <AndroidUseIntermediateDesignerFile>false</AndroidUseIntermediateDesignerFile>
-        <AndroidClassParser>class-parse</AndroidClassParser>
+<!--        <GenerateLibraryLayout>false</GenerateLibraryLayout>-->
+<!--        <AndroidUseIntermediateDesignerFile>false</AndroidUseIntermediateDesignerFile>-->
+<!--        <AndroidClassParser>class-parse</AndroidClassParser>-->
         <NoWarn>XA0141</NoWarn>
     </PropertyGroup>
 
@@ -34,7 +34,7 @@
         <PackageReference Include="Xamarin.Android.Glide.Annotations" Version="4.16.0.14"/>
         <PackageReference Include="Xamarin.Android.Glide.DiskLruCache" Version="4.16.0.14"/>
         <PackageReference Include="Xamarin.Android.Glide.GifDecoder" Version="4.16.0.14"/>
-        <PackageReference Include="Xamarin.Google.Guava" Version="33.3.1.1"/>
+        <PackageReference Include="Xamarin.Google.Guava" Version="33.5.0"/>
 
         <!-- Jetpack Compose -->
         <PackageReference Include="Xamarin.AndroidX.Compose.Runtime" Version="1.10.0.1"/>
@@ -44,7 +44,6 @@
         <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.4.0.1"/>
         <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Core" Version="1.7.8.4"/>
         <PackageReference Include="Xamarin.AndroidX.Compose.Material.Icons.Extended" Version="1.7.8.4"/>
-
         <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout" Version="1.10.0.1" />
         <PackageReference Include="Xamarin.AndroidX.Compose.Foundation.Layout.Android" Version="1.10.0.1" />
         <PackageReference Include="Xamarin.AndroidX.Compose.UI.Android" Version="1.10.0.1" />
@@ -62,14 +61,26 @@
                           Version="1.10.0.1"
                           ExcludeAssets="all"
                           PrivateAssets="all" />
-        
-        
 <!--  <PackageReference Include="Xamarin.AndroidX.Compose.Material.Android" Version="1.8.3" />-->
+        
         <!-- Lifecycle -->
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.10.0.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.10.0.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.10.0.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.10.0.1"/>
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.10.0.1"/>-->
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.10.0.1"/>-->
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.10.0.1"/>-->
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.10.0.1"/>-->
+
+
+
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Ktx" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.10.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.9.1" />
+        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.12.2.1" />
 
         <!-- AndroidX & Kotlin -->
         <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.3.0.1"/>
@@ -85,14 +96,15 @@
         <PackageReference Include="Xamarin.AndroidX.Sqlite.Framework" Version="2.6.1"/>
 
         <!-- Media3 -->
-        <PackageReference Include="Xamarin.AndroidX.Media3.ExoPlayer" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.UI" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.Common" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.Extractor" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.DataSource" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.Container" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.Decoder" Version="1.4.1.1"/>
-        <PackageReference Include="Xamarin.AndroidX.Media3.Database" Version="1.4.1.1"/>
+        <PackageReference Include="Xamarin.AndroidX.Media3.Transformer" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.ExoPlayer" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.UI" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.Common" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.Extractor" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.DataSource" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.Container" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.Decoder" Version="1.9.0" />
+        <PackageReference Include="Xamarin.AndroidX.Media3.Database" Version="1.9.0" />
 
         <!-- Firebase dependencies (required by ML Kit) -->
         <PackageReference Include="Xamarin.Firebase.Components" Version="116.1.0.1"/>
@@ -120,10 +132,11 @@
     <!-- Android AAR/JAR references -->
     <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
         <!-- TruVideo Camera SDK -->
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-camera-79.1.1.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-components-0.1.20.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-1.0.5.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-exceptions-1.0.2.jar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-camera-79.2.1.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-components-0.1.22.aar" Bind="true" Visible="true"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-media-upload-source-0.0.5.aar" Bind="false" Visible="false"/>
+        <!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-1.0.5.aar" Bind="false" Visible="false"/>-->
+        <!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-exceptions-1.0.2.jar" Bind="false" Visible="false"/>-->
 
         <!-- Jetpack Compose integration -->
 <!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\compose-1.0.0-beta01.aar" Bind="false" Visible="false"/>-->

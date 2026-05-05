@@ -21,3 +21,8 @@
 #-renamesourcefileattribute SourceFile
 -keep class io.ktor.** { *; }
 -keep class kotlinx.serialization.** { *; }
+
+# Keep Coil3 classes (required for ImageLoader.Builder)
+-keep class coil3.** { *; }
+-keepclassmembers class coil3.** { *; }
+-dontwarn coil3.**

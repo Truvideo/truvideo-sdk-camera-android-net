@@ -53,7 +53,8 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Partekatu honekin"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Partekatu <ns1:g id="APPLICATION_NAME">%s</ns1:g> aplikazioarekin"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Tolestu"</string>
-    <string msgid="389117264260014992" name="autofill">"Betetze automatikoa"</string>
+    <string msgid="8719607706653693137" name="androidx_compose_foundation_autofill">"Betetze automatikoa"</string>
+    <string msgid="1150566100598813236" name="androidx_compose_ui_autofill">"Betetze automatikoa"</string>
     <string name="bottomsheet_action_collapse">Tolestu pantailaren behealdean ainguratutako orria</string>
     <string name="bottomsheet_action_expand">Zabaldu pantailaren behealdean ainguratutako orria</string>
     <string name="bottomsheet_action_expand_halfway">Zabaldu erdiraino</string>
@@ -114,8 +115,8 @@
     <string name="exo_controls_seek_bar_description">Erreprodukzioaren garapena</string>
     <string name="exo_controls_settings_description">Ezarpenak</string>
     <string name="exo_controls_show">Erakutsi erreproduzigailua kontrolatzeko aukerak</string>
-    <string name="exo_controls_shuffle_off_description">Gaitu ausaz erreproduzitzeko modua</string>
-    <string name="exo_controls_shuffle_on_description">Desgaitu ausaz erreproduzitzeko modua</string>
+    <string name="exo_controls_shuffle_off_description">Gaitu ausazko modua</string>
+    <string name="exo_controls_shuffle_on_description">Desgaitu ausazko modua</string>
     <string name="exo_controls_stop_description">Gelditu</string>
     <string name="exo_controls_vr_description">EBko modua</string>
     <string name="exo_download_completed">Osatu da deskarga</string>

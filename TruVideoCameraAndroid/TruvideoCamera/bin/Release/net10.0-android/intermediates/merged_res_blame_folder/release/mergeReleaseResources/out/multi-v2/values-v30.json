@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-76:/values-v30/values-v30.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-75:/values-v30/values-v30.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/7b151352781734de08f1874f80b1cd08/transformed/material3/res/values-v30/values-v30.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-78:/values-v30/values-v30.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-77:/values-v30/values-v30.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/7b151352781734de08f1874f80b1cd08/transformed/material3/res/values-v30/values-v30.xml",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-78:/values-v21/values-v21.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-77:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/b75d96c6d775bdcd57b1a8e8f8f1c2d8/transformed/core-1.16.0/res/values-v21/values-v21.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/4c2b6163aa36069b138ef6e5e6d6ac19/transformed/core-1.17.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -20,6 +20,25 @@
                         "endLines": "2,8,9,10,281,282,283,284,287,292",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "168,677,744,808,19897,20023,20149,20277,20449,20801"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/14ddf415a295e7f148ad1d85693ec0a7/transformed/media3-ui-1.9.2/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endLines": "2,7",
+                        "endColumns": "58,10",
+                        "endOffsets": "109,396"
+                    },
+                    "to": {
+                        "startLines": "3,232",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,17013",
+                        "endLines": "3,236",
+                        "endColumns": "58,10",
+                        "endOffsets": "227,17295"
                     }
                 },
                 {
@@ -56,25 +75,6 @@
                         "endLines": "11,277,280",
                         "endColumns": "64,12,12",
                         "endOffsets": "873,19603,19781"
-                    }
-                },
-                {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/34dfe88b7c7c87c9503de3bb96c37a49/transformed/media3-ui-1.8.0/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,114",
-                        "endLines": "2,7",
-                        "endColumns": "58,10",
-                        "endOffsets": "109,396"
-                    },
-                    "to": {
-                        "startLines": "3,232",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,17013",
-                        "endLines": "3,236",
-                        "endColumns": "58,10",
-                        "endOffsets": "227,17295"
                     }
                 },
                 {
@@ -99,10 +99,10 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-76:/values-v21/values-v21.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-75:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/b75d96c6d775bdcd57b1a8e8f8f1c2d8/transformed/core-1.16.0/res/values-v21/values-v21.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/4c2b6163aa36069b138ef6e5e6d6ac19/transformed/core-1.17.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -118,6 +118,25 @@
                         "endLines": "2,8,9,10,281,282,283,284,287,292",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "168,677,744,808,19897,20023,20149,20277,20449,20801"
+                    }
+                },
+                {
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/14ddf415a295e7f148ad1d85693ec0a7/transformed/media3-ui-1.9.2/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endLines": "2,7",
+                        "endColumns": "58,10",
+                        "endOffsets": "109,396"
+                    },
+                    "to": {
+                        "startLines": "3,232",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,17013",
+                        "endLines": "3,236",
+                        "endColumns": "58,10",
+                        "endOffsets": "227,17295"
                     }
                 },
                 {
@@ -154,25 +173,6 @@
                         "endLines": "11,277,280",
                         "endColumns": "64,12,12",
                         "endOffsets": "873,19603,19781"
-                    }
-                },
-                {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/34dfe88b7c7c87c9503de3bb96c37a49/transformed/media3-ui-1.8.0/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,114",
-                        "endLines": "2,7",
-                        "endColumns": "58,10",
-                        "endOffsets": "109,396"
-                    },
-                    "to": {
-                        "startLines": "3,232",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,17013",
-                        "endLines": "3,236",
-                        "endColumns": "58,10",
-                        "endOffsets": "227,17295"
                     }
                 },
                 {

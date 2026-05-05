@@ -53,7 +53,8 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Comparte contido con"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Comparte contido coa aplicación <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Contrae"</string>
-    <string msgid="389117264260014992" name="autofill">"Autocompletar"</string>
+    <string msgid="8719607706653693137" name="androidx_compose_foundation_autofill">"Autocompletar"</string>
+    <string msgid="1150566100598813236" name="androidx_compose_ui_autofill">"Autocompletar"</string>
     <string name="bottomsheet_action_collapse">Contrae o panel inferior</string>
     <string name="bottomsheet_action_expand">Desprega o panel inferior</string>
     <string name="bottomsheet_action_expand_halfway">Despregar ata a metade</string>
@@ -114,8 +115,8 @@
     <string name="exo_controls_seek_bar_description">Progreso da reprodución</string>
     <string name="exo_controls_settings_description">Configuración</string>
     <string name="exo_controls_show">Mostrar controis do reprodutor</string>
-    <string name="exo_controls_shuffle_off_description">Activar modo de reprodución aleatoria</string>
-    <string name="exo_controls_shuffle_on_description">Desactivar modo de reprodución aleatoria</string>
+    <string name="exo_controls_shuffle_off_description">Activar modo aleatorio</string>
+    <string name="exo_controls_shuffle_on_description">Desactivar modo aleatorio</string>
     <string name="exo_controls_stop_description">Deter</string>
     <string name="exo_controls_vr_description">Modo RV</string>
     <string name="exo_download_completed">Completouse a descarga</string>

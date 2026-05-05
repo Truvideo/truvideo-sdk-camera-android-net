@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-release-78:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-75:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a564a604f17acdb0942709875243555b/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-76:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "com.truvideo.camera.TruvideoCamera-release-77:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/8.10.2/transforms/a564a604f17acdb0942709875243555b/transformed/preference-1.2.1/res/values-sw360dp-v13/values-sw360dp-v13.xml",
