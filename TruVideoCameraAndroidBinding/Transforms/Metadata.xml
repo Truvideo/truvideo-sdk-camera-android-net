@@ -17,6 +17,7 @@
   <enum field="LANDSCAPE_LEFT" name="LandscapeLeft" type="TruvideoSdkCameraOrientation"/>
   <enum field="LANDSCAPE_RIGHT" name="LandscapeRight" type="TruvideoSdkCameraOrientation"/>
   <enum field="PORTRAIT_REVERSE" name="PortraitReverse" type="TruvideoSdkCameraOrientation"/>
+  <enum field="ANY" name="Any" type="TruvideoSdkCameraOrientation"/>
   <method enumReturn="true" name="Picture" />
   <method enumReturn="true" name="Video" />
   <method enumReturn="true" name="VideoAndPicture" />

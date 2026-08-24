@@ -4,5 +4,6 @@ enum class OrientationMode {
     PORTRAIT,
     LANDSCAPE_LEFT,
     LANDSCAPE_RIGHT,
-    PORTRAIT_REVERSE
+    PORTRAIT_REVERSE,
+    ANY
 }

@@ -4,7 +4,7 @@
             "outputFile": "com.truvideo.camera.TruvideoCamera-mergeReleaseResources-75:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/39c2200e06456e6ff02c0aebeba19013/transformed/material-1.13.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/279c9536e3c0dca69be875a0c6eebe08/transformed/material-1.12.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -19,7 +19,7 @@
             "outputFile": "com.truvideo.camera.TruvideoCamera-release-77:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/39c2200e06456e6ff02c0aebeba19013/transformed/material-1.13.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "source": "/Users/apple/.gradle/caches/8.10.2/transforms/279c9536e3c0dca69be875a0c6eebe08/transformed/material-1.12.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

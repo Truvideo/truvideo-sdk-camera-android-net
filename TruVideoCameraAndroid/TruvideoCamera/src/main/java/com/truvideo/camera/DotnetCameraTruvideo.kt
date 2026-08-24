@@ -6,7 +6,7 @@ import android.content.Intent
 import android.util.Log
 import androidx.startup.AppInitializer
 import com.truvideo.sdk.camera.TruvideoSdkCamera
-import com.truvideo.sdk.camera.TruvideoSdkCameraInitializer
+import com.truvideo.sdk.camera.initializer.TruvideoSdkCameraInitializer
 import com.truvideo.sdk.camera.model.TruvideoSdkArCameraConfiguration
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraFlashMode
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraImageFormat
@@ -33,7 +33,7 @@ class DotnetCameraTruvideo {
         var config: TruvideoSdkCameraConfiguration?= null
         var ArConfig: TruvideoSdkArCameraConfiguration?= null
 
-        @JvmStatic
+       /* @JvmStatic
         fun environment(callback: CameraCallback) {
             val environment = TruvideoSdkCamera.environment
             callback.onSuccess("" + environment)
@@ -43,7 +43,7 @@ class DotnetCameraTruvideo {
         fun version(callback: CameraCallback) {
             val version = TruvideoSdkCamera.version
             callback.onSuccess("" + version)
-        }
+        }*/
 
         @JvmStatic
         fun isAugmentedRealityInstalled(callback: CameraCallback) {
@@ -79,9 +79,14 @@ class DotnetCameraTruvideo {
             flashModeValue: FlashMode?,
             orientationValue: OrientationMode?,
             outputPathValue: String,
+            imageTypeValue: ImageType?,
+            frontResolutionType: ResolutionType?,
+            backResolutionType: ResolutionType?,
             modeConfig: ModeTypeConfig,
             autoClose: Boolean,
             streamingUploadValue: Boolean,
+            shouldMirrorFrontCameraValue: Boolean,
+            noiseCancellationEnabledValue: Boolean,
             callback: CameraCallback
         ) {
             CoroutineScope(Dispatchers.IO).launch {
@@ -92,6 +97,7 @@ class DotnetCameraTruvideo {
             val flashType = FlashModeConverter.flashModeType(flashModeValue)
             val orientationType = OrientationConverter.videoOrientationType(orientationValue)
                 val modeType = ModeConverter.convertModeType(modeConfig)
+                val imageType = ImageTypeConverter.imageModeType(imageTypeValue)
 
                 if (modeType is VideoAndPicture) {
                     mode = TruvideoSdkCameraMode.VideoAndImage(
@@ -113,9 +119,10 @@ class DotnetCameraTruvideo {
                 } else if (modeType is SingleVideo) {
                     mode=TruvideoSdkCameraMode.SingleVideo(autoClose, modeType.videoDuration)
                 } else if (modeType is Picture) {
-                    mode = TruvideoSdkCameraMode.Image(modeType.pictureCount)
+                    mode = TruvideoSdkCameraMode.Image(autoClose,modeType.pictureCount)
                 } else if (modeType is Video) {
                     mode = TruvideoSdkCameraMode.Video(
+                        autoClose,
                         modeType.videoCount,
                         modeType.videoDuration
                     )
@@ -149,26 +156,46 @@ class DotnetCameraTruvideo {
                     TruvideoSdkCameraOrientation.LANDSCAPE_LEFT
                 } else if (orientationType == TruVideoSdkCameraOrientation.LANDSCAPE_RIGHT) {
                     TruvideoSdkCameraOrientation.LANDSCAPE_RIGHT
-                } else {
+                }
+                else {
                     null
                 }
+                val imageTypes =
+                    if (imageType == TruVideoSdkCameraImageType.JPEG) {
+                        TruvideoSdkCameraImageFormat.JPEG
+                    } else {
+                        TruvideoSdkCameraImageFormat.PNG
+                    }
+
+                val frontResolution =
+                    ResolutionConverter.getResolution(
+                        frontResolutionType
+                    )
+
+                val backResolution =
+                    ResolutionConverter.getResolution(
+                        backResolutionType
+                    )
+
             val outputPath = context.filesDir.path + "/camera"
             val configuration = TruvideoSdkCameraConfiguration(
                 lensFacing = lensFacing,
                 flashMode = flashMode,
                 orientation = orientation,
                 outputPath = outputPath,
-                frontResolutions = arrayListOf(),
-                frontResolution = null,
-                backResolutions = arrayListOf(),
-                backResolution = null,
+                frontResolutions = frontResolution?.let { listOf(it) } ?: emptyList(),
+                frontResolution = frontResolution,
+                backResolutions = backResolution?.let { listOf(it) } ?: emptyList(),
+                backResolution = backResolution,
                 mode = mode,
-                imageFormat = TruvideoSdkCameraImageFormat.JPEG,
+                imageFormat = imageTypes,
                 videoStabilizationEnabled = false,
-                streamingUpload = streamingUploadValue
+                streamingUpload = streamingUploadValue,
+                noiseCancellationEnabled = noiseCancellationEnabledValue,
+                shouldMirrorFrontCamera = shouldMirrorFrontCameraValue
             )
                 config=configuration;
-                //Log.e("Rahul",""+config)
+                Log.e("Rahul",""+config)
                 val intent = Intent(context.applicationContext, CameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }
@@ -214,9 +241,9 @@ class DotnetCameraTruvideo {
                 } else if (modeType is SingleVideo) {
                     mode=TruvideoSdkCameraMode.SingleVideo(autoClose, modeType.videoDuration)
                 } else if (modeType is Picture) {
-                    mode=TruvideoSdkCameraMode.Image(modeType.pictureCount)
+                    mode=TruvideoSdkCameraMode.Image(autoClose,modeType.pictureCount)
                 } else if (modeType is Video) {
-                    mode=TruvideoSdkCameraMode.Video(modeType.videoCount, modeType.videoDuration
+                    mode=TruvideoSdkCameraMode.Video(autoClose,modeType.videoCount, modeType.videoDuration
                     )
 
                 } else if (modeType is SingleVideoOrPicture) {
@@ -244,7 +271,7 @@ class DotnetCameraTruvideo {
                 )
                 mainCallback = callback
                 ArConfig=configuration;
-               // Log.e("Rahul",""+ArConfig)
+                Log.e("Rahul",""+ArConfig)
                 val intent = Intent(context.applicationContext, ArCameraActivity::class.java).apply {
                     flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 }

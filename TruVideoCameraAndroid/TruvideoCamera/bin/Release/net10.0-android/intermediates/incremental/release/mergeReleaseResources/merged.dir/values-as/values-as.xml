@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="exo_controls_playback_speeds">
+    <item>০.২৫ গুণ</item>
+    <item>০.৫ গুণ</item>
+    <item>০.৭৫ গুণ</item>
+    <item>সাধাৰণ</item>
+    <item>১.২৫ গুণ</item>
+    <item>১.৫ গুণ</item>
+    <item>২ গুণ</item>
+  </string-array>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+    <item quantity="one">%d ছেকেণ্ড ফাষ্ট ফৰৱাৰ্ড কৰক</item>
+    <item quantity="other">%d ছেকেণ্ড ফাষ্ট ফৰৱাৰ্ড কৰক</item>
+  </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+    <item quantity="one">%d ছেকেণ্ড ৰিৱাইণ্ড কৰক</item>
+    <item quantity="other">%d ছেকেণ্ড ৰিৱাইণ্ড কৰক</item>
+  </plurals>
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d new notification</item>
     <item quantity="other">%d new notifications</item>
@@ -36,6 +53,7 @@
     <string name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
     <string name="bottomsheet_action_expand">Expand the bottom sheet</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bottomsheet_drag_handle_clicked">Drag handle double-tapped</string>
     <string name="bottomsheet_drag_handle_content_description">Drag handle</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"উত্তৰ দিয়ক"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"ভিডিঅ’"</string>
@@ -67,19 +85,66 @@
     <string name="common_open_on_phone">ফ\'নত খোলক</string>
     <string name="common_signin_button_text">ছাইন ইন কৰক</string>
     <string name="common_signin_button_text_long">Googleৰ জৰিয়তে ছাইন ইন কৰক</string>
-    <string msgid="6083905920877235314" name="copy">"প্ৰতিলিপি কৰক"</string>
     <string msgid="8038256446254964252" name="default_error_message">"অমান্য ইনপুট"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"পপ-আপ ৱিণ্ড’"</string>
     <string msgid="1890207353314751437" name="dropdown_menu">"ড্ৰপডাউনৰ মেনু"</string>
     <string name="error_a11y_label">Error: invalid</string>
     <string name="error_icon_content_description">Error</string>
-    <string msgid="2427401033573778270" name="expand_button_title">"উন্নত"</string>
+    <string name="exo_controls_cc_disabled_description">ছাবটাইটেল সক্ষম কৰক</string>
+    <string name="exo_controls_cc_enabled_description">ছাবটাইটেল অক্ষম কৰক</string>
+    <string name="exo_controls_fastforward_description">ফাষ্ট ফৰৱাৰ্ড</string>
+    <string name="exo_controls_fullscreen_enter_description">পূৰ্ণ স্ক্ৰীনলৈ যাওক</string>
+    <string name="exo_controls_fullscreen_exit_description">পূৰ্ণ স্ক্ৰীনৰ পৰা বাহিৰ হওক</string>
+    <string name="exo_controls_hide">প্লে’য়াৰৰ নিয়ন্ত্ৰণসমূহ লুকুৱাওক</string>
+    <string name="exo_controls_next_description">পৰৱৰ্তী</string>
+    <string name="exo_controls_overflow_hide_description">অতিৰিক্ত ছেটিং লুকুৱাওক</string>
+    <string name="exo_controls_overflow_show_description">অতিৰিক্ত ছেটিং দেখুৱাওক</string>
+    <string name="exo_controls_pause_description">পজ কৰক</string>
+    <string name="exo_controls_play_description">প্লে’ কৰক</string>
+    <string name="exo_controls_playback_speed">গতিবেগ</string>
+    <string name="exo_controls_previous_description">পূৰ্বৱৰ্তী</string>
+    <string name="exo_controls_repeat_all_description">বৰ্তমানৰ ম’ড: আটাইবোৰ পুনৰাবৃত্তি কৰক। ৰিপিট ম’ড ট’গল কৰক।</string>
+    <string name="exo_controls_repeat_off_description">বৰ্তমানৰ ম’ড: একো পুনৰাবৃত্তি নকৰিব। ৰিপিট ম’ড ট’গল কৰক।</string>
+    <string name="exo_controls_repeat_one_description">বৰ্তমানৰ ম’ড: এটা পুনৰাবৃত্তি কৰক। ৰিপিট ম’ড ট’গল কৰক।</string>
+    <string name="exo_controls_rewind_description">ৰিৱাইণ্ড</string>
+    <string name="exo_controls_seek_bar_description">প্লে’বেকৰ অগ্ৰগতি</string>
+    <string name="exo_controls_settings_description">ছেটিং</string>
+    <string name="exo_controls_show">প্লে’য়াৰৰ নিয়ন্ত্ৰণসমূহ দেখুৱাওক</string>
+    <string name="exo_controls_shuffle_off_description">শ্বাফল ম’ড সক্ষম কৰক</string>
+    <string name="exo_controls_shuffle_on_description">শ্বাফল ম’ড অক্ষম কৰক</string>
+    <string name="exo_controls_stop_description">বন্ধ কৰক</string>
+    <string name="exo_controls_vr_description">ভিআৰ ম’ড</string>
+    <string name="exo_download_completed">ডাউনল’ড সম্পূৰ্ণ হ’ল</string>
+    <string name="exo_download_description">ডাউনল’ড কৰক</string>
+    <string name="exo_download_downloading">ডাউনল’ড হৈ আছে</string>
+    <string name="exo_download_failed">ডাউনল’ড কৰিব পৰা নগ’ল</string>
+    <string name="exo_download_notification_channel_name">ডাউনল’ড</string>
+    <string name="exo_download_paused">ডাউনল’ড পজ কৰা হৈছে</string>
+    <string name="exo_download_paused_for_network">ডাউনল’ড হ’বলৈ নেটৱৰ্কৰৰ অপেক্ষাত আছে</string>
+    <string name="exo_download_paused_for_wifi">ডাউনল’ড হ’বলৈ ৱাই-ফাইৰ অপেক্ষাত আছে</string>
+    <string name="exo_download_removing">ডাউনল’ড আঁতৰাই থকা হৈছে</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">ম’ন’</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">বিকল্প</string>
+    <string name="exo_track_role_closed_captions">CC</string>
+    <string name="exo_track_role_commentary">ধাৰাভাষ্য</string>
+    <string name="exo_track_role_supplementary">পৰিপূৰক</string>
+    <string name="exo_track_selection_auto">স্বয়ংক্ৰিয়</string>
+    <string name="exo_track_selection_none">নাই</string>
+    <string name="exo_track_selection_title_audio">অডিঅ’</string>
+    <string name="exo_track_stereo">ষ্টেৰিঅ’</string>
+    <string name="exo_track_surround">ছাৰাউণ্ড ছাউণ্ড</string>
+    <string name="exo_track_surround_5_point_1">5.1 ছাৰাউণ্ড ছাউণ্ড</string>
+    <string name="exo_track_surround_7_point_1">7.1 ছাৰাউণ্ড ছাউণ্ড</string>
+    <string name="exo_track_unknown">অজ্ঞাত</string>
+    <string name="exo_track_unknown_name">অজ্ঞাত (%1$s)</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="icon_content_description">Dialog Icon</string>
     <string msgid="6827826412747255547" name="in_progress">"প্ৰক্ৰিয়াকৰণ কৰি থকা হৈছে"</string>
     <string msgid="7933458017204019916" name="indeterminate">"আংশিকভাৱে পৰীক্ষা কৰা হৈছে"</string>
     <string name="item_view_role_description">Tab</string>
-    <string name="m3_loading_indicator_content_description">Loading</string>
     <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"তলৰ শ্বীটখন সংকোচন কৰক"</string>
     <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"তলৰ শ্বীটখন অগ্ৰাহ্য কৰক"</string>
     <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"ড্ৰেগ হেণ্ডেল"</string>
@@ -152,9 +217,6 @@
     <string name="material_hour_suffix">%1$s o\'clock</string>
     <string name="material_minute_selection">মিনিট বাছনি কৰক</string>
     <string name="material_minute_suffix">%1$s minutes</string>
-    <string name="material_slider_range_end">Range end</string>
-    <string name="material_slider_range_start">Range start</string>
-    <string name="material_slider_value">Value</string>
     <string name="material_timepicker_am">AM</string>
     <string name="material_timepicker_clock_mode_description">সময়ৰ ইনপুটৰ বাবে ঘড়ী ম\'ডলৈ যাওক।</string>
     <string name="material_timepicker_hour">Hour</string>
@@ -202,18 +264,14 @@
     <string name="mtrl_picker_text_input_year_abbr">y</string>
     <string name="mtrl_picker_today_description">Today %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
-    <string name="mtrl_picker_toggle_to_day_selection">Switch to Calendar view</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to Calendar view</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
-    <string name="mtrl_picker_toggle_to_year_selection">Switch to year view</string>
-    <string name="mtrl_picker_toggled_to_day_selection">Switched to Calendar view</string>
-    <string name="mtrl_picker_toggled_to_year_selection">Switched to year view</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to year view</string>
     <string name="mtrl_timepicker_cancel">Cancel</string>
     <string name="mtrl_timepicker_confirm">OK</string>
     <string msgid="542007171693138492" name="navigation_menu">"নেভিগেশ্বন মেনু"</string>
     <string msgid="6610465462668679431" name="not_selected">"বাছনি কৰা হোৱা নাই"</string>
-    <string msgid="6573031135582639649" name="not_set">"ছেট কৰা হোৱা নাই"</string>
     <string name="password_toggle_content_description">পাছৱৰ্ড দেখুৱাওক</string>
-    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" ক্লিপব’ৰ্ডত প্ৰতিলিপি কৰা হ’ল"</string>
     <string msgid="5941395253238309765" name="range_end">"পৰিসৰৰ সমাপ্তি"</string>
     <string msgid="7097486360902471446" name="range_start">"পৰিসৰৰ আৰম্ভণি"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"সন্ধান"</string>
@@ -226,12 +284,9 @@
     <string msgid="5834637030682409883" name="state_off">"অফ আছে"</string>
     <string msgid="1490883874751719580" name="state_on">"অন আছে"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
-    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
     <string msgid="2561197295334830845" name="switch_role">"ছুইচ"</string>
     <string msgid="1672349317127674378" name="tab">"টেব"</string>
     <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> শতাংশ।"</string>
     <string msgid="3765533235322692011" name="tooltip_description">"টুলটিপ"</string>
     <string msgid="3124740595719787496" name="tooltip_label">"টুলটিপ দেখুৱাওক"</string>
-    <string msgid="3140233346420563315" name="v7_preference_off">"অফ অৱস্থাত আছে"</string>
-    <string msgid="89551595707643515" name="v7_preference_on">"অন কৰক"</string>
 </resources>

@@ -8,7 +8,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 26
     }
 
 
@@ -26,7 +26,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "17"
+        //jvmTarget = "17"
     }
 
 }
@@ -43,34 +43,11 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.truvideo.sdk.android.camera)
-    
-    // Coil3 Android module (required for ImageLoader.Builder(Context) constructor)
-    //implementation("io.coil-kt.coil3:coil-android:3.3.0")
-    /*configurations["copyDependencies"].dependencies.add(
-        project.dependencies.create("com.github.Truvideo:truvideo-sdk-android-camera:79.2.2")
-    )*/
-
-    // Coil3 dependencies - Android-specific module needed for ImageLoader.Builder(Context)
-//    configurations["copyDependencies"].dependencies.add(
-//        project.dependencies.create("io.coil-kt.coil3:coil:3.3.0")
-//    )
-//    // Android-specific module (provides ImageLoader.Builder(Context) constructor)
-//    configurations["copyDependencies"].dependencies.add(
-//        project.dependencies.create("io.coil-kt.coil3:coil-android:3.3.0")
-//    )
-//    configurations["copyDependencies"].dependencies.add(
-//        project.dependencies.create("io.coil-kt.coil3:coil-compose:3.3.0")
-//    )
-//    configurations["copyDependencies"].dependencies.add(
-//        project.dependencies.create("io.coil-kt.coil3:coil-video:3.3.0")
-//    )
-//
-//    configurations["copyDependencies"].dependencies.add(
-//        project.dependencies.create("androidx.work:work-runtime-ktx:2.11.0")
-//    )
-//
-
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation(libs.androidx.startup.runtime)
+    configurations["copyDependencies"].dependencies.add(
+        project.dependencies.create("com.truvideo.com:sdk-camera:1.0.5")
+    )
+    implementation(libs.gson)
 }
 configurations.all {
     resolutionStrategy.eachDependency {

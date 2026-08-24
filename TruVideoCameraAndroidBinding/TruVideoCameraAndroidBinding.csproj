@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Version>2.0.0</Version>
+        <Version>2.0.2</Version>
         <TargetFramework>net10.0-android</TargetFramework>
         <MauiVersion>10.0.10</MauiVersion>
         <Nullable>enable</Nullable>
@@ -64,13 +64,6 @@
 <!--  <PackageReference Include="Xamarin.AndroidX.Compose.Material.Android" Version="1.8.3" />-->
         
         <!-- Lifecycle -->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.10.0.1"/>-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel" Version="2.10.0.1"/>-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.10.0.1"/>-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.10.0.1"/>-->
-
-
-
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.10.0.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.10.0.1" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.10.0.1" />
@@ -132,21 +125,18 @@
     <!-- Android AAR/JAR references -->
     <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
         <!-- TruVideo Camera SDK -->
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-camera-79.2.1.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-components-0.1.22.aar" Bind="true" Visible="true"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-media-upload-source-0.0.5.aar" Bind="false" Visible="false"/>
-        <!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-1.0.5.aar" Bind="false" Visible="false"/>-->
-        <!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\truvideo-sdk-android-video-utils-exceptions-1.0.2.jar" Bind="false" Visible="false"/>-->
 
-        <!-- Jetpack Compose integration -->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\compose-1.0.0-beta01.aar" Bind="false" Visible="false"/>-->
-
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-camera-1.0.5.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-internal-media-1.0.5.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-internal-shared-1.0.5.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-internal-ui-1.0.5.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-model-1.0.5.aar" Bind="false" Visible="false"/>
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\sdk-internal-video-1.0.5.aar" Bind="false" Visible="false"/>
+        
         <!-- Kotlin extensions -->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\ktx-1.0.0-beta01.aar" Bind="false" Visible="false"/>-->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\kotlinx-collections-immutable-jvm-0.4.0.jar" Bind="false" Visible="false"/>
 
         <!-- AndroidX Core runtime -->
-<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\core-1.47.0.aar" Bind="false" Visible="false"/>-->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\core-1.48.0.aar" Bind="false" Visible="false"/>
 
         <!-- Sceneform / AR -->
@@ -178,32 +168,17 @@
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\isoparser-1.1.22.jar" Bind="false" Visible="false"/>
         
         <!-- Coil 3 ANDROID ONLY -->
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-core-android-3.3.0.aar"
-                        Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-android-3.2.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-core-android-3.3.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-compose-android-3.3.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-compose-core-android-3.3.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-video-3.3.0.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-gif-3.3.0.aar" Bind="false" Visible="false" />
 
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-android-3.2.0.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-compose-android-3.3.0.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-compose-core-android-3.3.0.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-video-3.3.0.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\coil-gif-3.3.0.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-2.3.1.jar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-android-2.3.1.aar"
-                        Bind="false" Visible="false" />
-
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-coroutines-2.3.1.jar"
-                        Bind="false" Visible="false" />
+        <!-- Fuel ANDROID ONLY -->
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-2.3.1.jar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-android-2.3.1.aar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-coroutines-2.3.1.jar" Bind="false" Visible="false" />
 
     </ItemGroup>
     

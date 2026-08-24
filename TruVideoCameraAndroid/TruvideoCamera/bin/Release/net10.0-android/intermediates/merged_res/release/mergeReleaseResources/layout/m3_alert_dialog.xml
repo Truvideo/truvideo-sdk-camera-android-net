@@ -21,8 +21,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="start|left|top"
-    android:orientation="vertical"
-    android:clipChildren="true">
+    android:orientation="vertical">
 
   <include layout="@layout/m3_alert_dialog_title"/>
 

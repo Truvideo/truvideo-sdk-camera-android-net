@@ -9,7 +9,8 @@ object OrientationConverter {
             OrientationMode.LANDSCAPE_LEFT -> TruVideoSdkCameraOrientation.LANDSCAPE_LEFT
             OrientationMode.LANDSCAPE_RIGHT -> TruVideoSdkCameraOrientation.LANDSCAPE_RIGHT
             OrientationMode.PORTRAIT_REVERSE -> TruVideoSdkCameraOrientation.PORTRAIT_REVERSE
-            else -> TruVideoSdkCameraOrientation.PORTRAIT // default
+            OrientationMode.ANY -> TruVideoSdkCameraOrientation.ANY
+            else -> TruVideoSdkCameraOrientation.ANY // default
         }
     }
 }

@@ -2,13 +2,12 @@ package com.truvideo.camera
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import com.truvideo.sdk.camera.TruvideoSdkCamera
 import com.truvideo.sdk.camera.model.TruvideoSdkArCameraConfiguration
-import com.truvideo.sdk.camera.ui.activities.arcamera.TruvideoSdkArCameraContract
+import com.truvideo.sdk.camera.ui.activities.proposal.TruvideoSdkNewArCameraContract
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -18,14 +17,8 @@ class ArCameraActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_camera)
-       /* ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }*/
 //        val configuration = intent.getStringExtra("configuration")!!
-        launcher = registerForActivityResult(TruvideoSdkArCameraContract()){
-            //val jsonArray = Json.encodeToString(ListSerializer(TruvideoSdkCameraMedia.serializer()),it)
+        launcher = registerForActivityResult(TruvideoSdkNewArCameraContract()){
             val jsonArray = JSONArray()
             it.forEach { media ->
                 val resolutionObj = JSONObject().apply {
@@ -63,94 +56,7 @@ class ArCameraActivity : AppCompatActivity() {
     }
 
     fun openArCamera(context: Context){
-        /*val jsonConfiguration = JSONObject(configuration)
-        var mode = TruvideoSdkCameraMode.videoAndImage()
-        var outputPath = filesDir.path + "/camera"
-        if(jsonConfiguration.has("outputPath")){
-            val newOutputPath = jsonConfiguration.getString("outputPath")
-            if(newOutputPath.isNotEmpty()){
-                outputPath = newOutputPath
-            }
-        }
-        if(jsonConfiguration.has("orientation")) {
-
-            val orientation =
-                if (orientationType == TruVideoSdkCameraOrientation.PORTRAIT) {
-                    TruvideoSdkCameraOrientation.PORTRAIT
-                } else if (orientationType == TruVideoSdkCameraOrientation.PORTRAIT_REVERSE) {
-                    TruvideoSdkCameraOrientation.PORTRAIT_REVERSE
-                } else if (orientationType == TruVideoSdkCameraOrientation.LANDSCAPE_LEFT) {
-                    TruvideoSdkCameraOrientation.LANDSCAPE_LEFT
-                } else if (orientationType == TruVideoSdkCameraOrientation.LANDSCAPE_RIGHT) {
-                    TruvideoSdkCameraOrientation.LANDSCAPE_RIGHT
-                } else {
-                    null
-                }
-
-
-            when(jsonConfiguration.getString("orientation")){
-                "PORTRAIT" -> orientation = TruvideoSdkCameraOrientation.PORTRAIT
-                "LANDSCAPE_LEFT" -> orientation = TruvideoSdkCameraOrientation.LANDSCAPE_LEFT
-                "LANDSCAPE_RIGHT" -> orientation = TruvideoSdkCameraOrientation.LANDSCAPE_RIGHT
-                "PORTRAIT_REVERSE" -> orientation = TruvideoSdkCameraOrientation.PORTRAIT_REVERSE
-            }
-        }
-        if(jsonConfiguration.has("mode")){
-            val jsonMode = JSONObject(jsonConfiguration.getString("mode"))
-            val videoDurationLimit : String? = if(jsonMode.getString("videoDurationLimit") != "" ) jsonMode.getString("videoDurationLimit") else null
-            val mediaLimit : String? = if(jsonMode.getString("mediaLimit") != "" ) jsonMode.getString("mediaLimit") else null
-            val videoLimit : String? = if(jsonMode.getString("videoLimit") != "" ) jsonMode.getString("videoLimit") else null
-            val imageLimit : String? = if(jsonMode.getString("imageLimit") != "" ) jsonMode.getString("imageLimit") else null
-            when(jsonMode.getString("mode")) {
-                "videoAndImage" -> {
-                    if(imageLimit != null || videoLimit != null){
-                        mode = TruvideoSdkCameraMode.videoAndImage(
-                            imageMaxCount = imageLimit?.toInt(),
-                            videoMaxCount = videoLimit?.toInt(),
-                            durationLimit = videoDurationLimit?.toDouble()
-                        )
-                    }else if(mediaLimit != null){
-                        mode = TruvideoSdkCameraMode.videoAndImage(
-                            maxCount = mediaLimit.toInt(),
-                            durationLimit = videoDurationLimit?.toDouble()
-                        )
-                    }else {
-                        mode = TruvideoSdkCameraMode.videoAndImage()
-                    }
-                }
-                "video" -> {
-                    mode = TruvideoSdkCameraMode.video(
-                        maxCount = videoLimit?.toInt(),
-                        durationLimit = videoDurationLimit?.toDouble()
-                    )
-                }
-                "image" -> {
-                    mode = TruvideoSdkCameraMode.image(
-                        maxCount = imageLimit?.toInt()
-                    )
-                }
-                "singleImage" ->{
-                    mode = TruvideoSdkCameraMode.singleImage()
-                }
-                "singleVideo" ->{
-                    mode = TruvideoSdkCameraMode.singleVideo(
-                        durationLimit = videoDurationLimit?.toDouble()
-                    )
-                }
-                "singleVideoOrImage" -> {
-                    mode = TruvideoSdkCameraMode.singleVideoOrImage(
-                        durationLimit = videoDurationLimit?.toDouble()
-                    )
-                }
-            }
-        }
-        val configuration = TruvideoSdkArCameraConfiguration(
-            orientation = orientation,
-            outputPath = outputPath,
-            mode = mode
-        )*/
-
-        Log.e("Rahul222222",""+ DotnetCameraTruvideo.ArConfig)
+        //Log.e("Rahul222222",""+ DotnetCameraTruvideo.ArConfig)
         launcher.launch(DotnetCameraTruvideo.ArConfig!!)
     }
 }

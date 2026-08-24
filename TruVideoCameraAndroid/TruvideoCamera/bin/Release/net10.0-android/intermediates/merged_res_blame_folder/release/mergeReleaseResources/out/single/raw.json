@@ -1,10 +1,10 @@
 [
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/raw/zxing_beep.ogg",
-        "source": "com.truvideo.camera.TruvideoCamera-zxing-android-embedded-4.3.0-12:/raw/zxing_beep.ogg"
+        "source": "com.truvideo.camera.TruvideoCamera-zxing-android-embedded-4.3.0-15:/raw/zxing_beep.ogg"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/raw/keep_arcore.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-core-1.48.0-68:/raw/keep_arcore.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-core-1.48.0-47:/raw/keep_arcore.xml"
     }
 ]

@@ -8,7 +8,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
 import com.truvideo.sdk.camera.TruvideoSdkCamera
-import com.truvideo.sdk.camera.interfaces.TruvideoSdkCamera
+
 import com.truvideo.sdk.camera.model.TruvideoSdkCameraMedia
 import com.truvideo.sdk.camera.model.external.TruvideoSdkCameraConfiguration
 import com.truvideo.sdk.camera.model.external.TruvideoSdkCameraEvent
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 
 class CameraActivity : ComponentActivity() {
     var cameraScreenLauncher: ActivityResultLauncher<TruvideoSdkCameraConfiguration>? = null
-    private lateinit var camera: TruvideoSdkCamera
+   // private lateinit var camera: TruvideoSdkCamera
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
@@ -65,7 +65,7 @@ class CameraActivity : ComponentActivity() {
 
     }*/
 
-    fun observeCameraEvents(
+   /* fun observeCameraEvents(
         activity: ComponentActivity,
         camera: TruvideoSdkCamera
     ) {
@@ -75,6 +75,6 @@ class CameraActivity : ComponentActivity() {
                     ?.onDataReceived(event.toString())
             }
         }
-    }
+    }*/
 
 }

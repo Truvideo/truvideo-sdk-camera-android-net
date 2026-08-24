@@ -1,74 +1,34 @@
 [
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_emphasized.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_emphasized.xml"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_standard.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_standard.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_standard_decelerate.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_standard_decelerate.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_standard_accelerate.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_standard_accelerate.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/mtrl_fast_out_linear_in.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/mtrl_fast_out_linear_in.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_emphasized_decelerate.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_emphasized_decelerate.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/mtrl_linear.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/mtrl_linear.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_linear.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_linear.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-material-1.12.0-10:/interpolator/mtrl_linear.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/fast_out_slow_in.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/fast_out_slow_in.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/m3_sys_motion_easing_emphasized_accelerate.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/m3_sys_motion_easing_emphasized_accelerate.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/fast_out_slow_in.xml"
     },
     {
         "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-62:/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
     },
     {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/mtrl_linear_out_slow_in.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/mtrl_linear_out_slow_in.xml"
-    },
-    {
-        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/mtrl_fast_out_slow_in.xml",
-        "source": "com.truvideo.camera.TruvideoCamera-material-1.13.0-13:/interpolator/mtrl_fast_out_slow_in.xml"
+        "merged": "com.truvideo.camera.TruvideoCamera-release-77:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "com.truvideo.camera.TruvideoCamera-appcompat-1.7.1-12:/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
     }
 ]

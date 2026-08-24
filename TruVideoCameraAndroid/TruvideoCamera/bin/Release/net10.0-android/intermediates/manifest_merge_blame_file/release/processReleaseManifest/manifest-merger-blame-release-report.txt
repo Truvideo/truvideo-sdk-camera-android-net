@@ -3,7 +3,7 @@
 3    xmlns:tools="http://schemas.android.com/tools"
 4    package="com.truvideo.camera" >
 5
-6    <uses-sdk android:minSdkVersion="24" />
+6    <uses-sdk android:minSdkVersion="26" />
 7
 8    <uses-permission android:name="android.permission.INTERNET" />
 8-->/Users/apple/Documents/TruVideo/TruVideoAndroidBinding/truvideo-sdk-camera-android-net/TruVideoCameraAndroid/TruvideoCamera/src/main/AndroidManifest.xml:5:5-67

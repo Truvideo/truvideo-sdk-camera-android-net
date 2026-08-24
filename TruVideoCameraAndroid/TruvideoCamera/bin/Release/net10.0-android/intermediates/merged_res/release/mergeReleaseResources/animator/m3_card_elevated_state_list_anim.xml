@@ -17,7 +17,8 @@
 
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
   <!-- Hovered state -->
   <item android:state_enabled="true" android:state_hovered="true">
@@ -27,7 +28,8 @@
       android:propertyName="translationZ"
       android:startDelay="?attr/motionDurationMedium1"
       android:valueTo="@dimen/m3_card_elevated_hovered_z"
-      android:valueType="floatType"/>
+      android:valueType="floatType"
+      tools:targetApi="kitkat"/>
   </item>
 
   <!-- Dragged state  -->
@@ -38,7 +40,8 @@
       android:propertyName="translationZ"
       android:startDelay="?attr/motionDurationMedium1"
       android:valueTo="@dimen/m3_card_elevated_dragged_z"
-      android:valueType="floatType"/>
+      android:valueType="floatType"
+      tools:targetApi="kitkat"/>
   </item>
 
   <!-- Base state -->
