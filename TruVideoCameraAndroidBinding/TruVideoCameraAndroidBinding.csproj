@@ -161,10 +161,10 @@
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\common-18.0.0.aar" Bind="false" Visible="false"/>
         
         <!-- Koin -->
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-android-3.5.0.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-androidx-compose-3.5.0.aar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-compose-jvm-1.1.0.jar" Bind="false" Visible="false"/>
-        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-core-jvm-3.5.0.jar" Bind="false" Visible="false"/>
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-android-3.5.0.aar" Bind="false" Visible="false"/>-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-androidx-compose-3.5.0.aar" Bind="false" Visible="false"/>-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-compose-jvm-1.1.0.jar" Bind="false" Visible="false"/>-->
+<!--        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\koin-core-jvm-3.5.0.jar" Bind="false" Visible="false"/>-->
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\isoparser-1.1.22.jar" Bind="false" Visible="false"/>
         
         <!-- Coil 3 ANDROID ONLY -->
@@ -179,6 +179,7 @@
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-2.3.1.jar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-android-2.3.1.aar" Bind="false" Visible="false" />
         <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\fuel-coroutines-2.3.1.jar" Bind="false" Visible="false" />
+        <AndroidLibrary Include="..\TruVideoCameraAndroid\TruvideoCamera\libs\nckit-1.1.1.aar" Bind="false" Visible="false" />
 
     </ItemGroup>
     
